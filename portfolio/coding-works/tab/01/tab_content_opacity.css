@@ -1,0 +1,68 @@
+/* Font - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Montserrat", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(0deg, #434343 0%, #1b1b1b 100%);
+}
+.tab-inner {
+  width: 280px;
+  height: 330px;
+  position: relative;
+  padding: 80px 80px;
+  box-shadow: 0 0 20px #0000002b;
+  border-radius: 30px;
+  background-color: #fff;
+}
+h2 {
+  margin-top: -50px;
+  text-align: center;
+  font-size: 22px;
+}
+input[name=tabmenu] {
+  display: none;
+}
+.content {
+  width: 280px;
+  height: 350px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+}
+.content img {
+  width: inherit;
+  height: inherit;
+}
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+}
+.btn label {
+  background-color: lightgray;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 5px;
+}
+input[id=tab1]:checked ~ .slide1,
+input[id=tab2]:checked ~ .slide2,
+input[id=tab3]:checked ~ .slide3 {
+  opacity: 1;
+  visibility: visible;
+}
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3] {
+  background-color: #333;
+}
+
