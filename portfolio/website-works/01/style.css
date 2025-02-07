@@ -1,0 +1,623 @@
+/* fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* XEICON CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* Web Font - 넥슨 Lv.2 고딕 */
+@font-face {
+  font-family: 'NEXON Lv2 Gothic';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Web Font - LINE Seed */
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+button, input {
+  outline: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+/* Default CSS */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+  font-family: 'LINESeedKR-Bd';
+}
+section {
+  padding: 100px 0;
+}
+
+/* Common CSS */
+.headline-share {
+  text-align: center;
+}
+.headline-share h1 {
+  font-size: 46px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.headline-share h1:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(to right, #f6b93b, #eee) ;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Section Display */
+/* header {display: none;}
+.welcome {display: none;}
+.brand {display: none;}
+.value {display: none;}
+.faq {display: none;}
+.lush-pick {display: none;}
+.editor-pick {display: none;}
+footer {display: none;} */
+
+/* --------------------------- Header --------------------------- */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: 0.3s;
+}
+header.active {
+  background-color: #fff;
+  box-shadow: 0 1px 10px #00000015;
+}
+.header-inner {
+  width: 1300px;
+  margin: auto;
+  overflow: hidden;
+  height: 80px;
+  line-height: 80px;
+}
+.logo {
+  float: left;
+}
+.logo img {
+  width: 110px;
+  margin-bottom: -11px;
+}
+.gnb {
+  float: right;
+}
+.gnb a {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin: 15px;
+  overflow: hidden;
+  margin-top: 28px;
+}
+.gnb a:nth-child(3) {
+  width: 50px;
+}
+.gnb a:nth-child(4) {
+  width: 100px;
+}
+.gnb a:nth-child(5) {
+  width: 130px;
+}
+.gnb a:before,
+.gnb a:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.gnb a:before {
+  top: 0;
+}
+.gnb a:after {
+  top: 100%;
+  color: crimson;
+}
+.gnb a:hover:before {
+  top: -100%;
+}
+.gnb a:hover:after {
+  top: 0;
+}
+/* ---------------------- Section : welcome --------------------- */
+.welcome {
+  height: 95vh;
+  position: relative;
+  padding: 0;
+}
+.main-slider {}
+.main-slider img {
+  height: 95vh;
+  object-fit: cover;
+  filter: opacity(0.8);
+}
+.welcome-heading {
+  position: absolute;
+  top: 50%;
+  left: 120px;
+  transform: translateY(-50%);
+}
+.welcome-heading p {}
+.welcome-heading p span {
+  font-size: 32px;
+  color: #333;
+  line-height: 1.7em;
+  display: block;
+}
+.welcome-heading em {
+  font-style: normal;
+  color: crimson;
+  font-weight: bold;
+  font-size: 42px;
+}
+/* ---------------------- Section : brand --------------------- */
+.brand {
+  padding-bottom: 0;
+}
+.brand-inner {
+  width: 1300px;
+  margin: auto;
+}
+.brand-content {
+  overflow: hidden;
+  margin: 100px 0;
+}
+.brand-content > div {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.brand-photo {}
+.brand-photo img {
+  width: 550px;
+  height: 400px;
+  object-fit: cover;
+}
+.brand-about {
+  padding: 0 30px;
+  padding-top: 110px;
+}
+.brand-about h2 {
+  font-size: 34px;
+}
+.brand-about p {
+  font-size: 18px;
+  line-height: 1.7em;
+  color: #777;
+}
+/* ---------------------- Section : value --------------------- */
+.value {
+  background-color: #f7d794;
+  padding: 80px 0;
+}
+.value-inner {
+  width: 1300px;
+  margin: auto;
+  overflow: hidden;
+}
+.value-content {
+  overflow: hidden;
+}
+.value-content > div {
+  float: left;
+  width: 50%;
+}
+.value-content input[name=value-tab] {
+  display: none;
+}
+.tab-btn {
+  text-align: center;
+}
+.tab-btn label {
+  display: inline-block;
+  width: 29%;
+}
+.tab-btn label em {
+  background-color: #fff;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  padding-top: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.tab-btn label em img {
+  width: 70px;
+  filter: invert(91%) sepia(8%) saturate(5163%) hue-rotate(313deg) brightness(123%) contrast(92%);
+}
+.tab-btn label span {
+  color: #fff;
+  display: block;
+  margin-top: 15px;
+}
+.tabs {}
+.tab {
+  display: none;
+  color: #fff;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+.tab h2 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+.tab p {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+/* Checked Function */
+.value-content input[id=tab1]:checked ~ .tab-btn label[for=tab1] em,
+.value-content input[id=tab2]:checked ~ .tab-btn label[for=tab2] em,
+.value-content input[id=tab3]:checked ~ .tab-btn label[for=tab3] em {
+  background-color: #f6b93b;
+}
+.value-content input[id=tab1]:checked ~ .tab-btn label[for=tab1] em img,
+.value-content input[id=tab2]:checked ~ .tab-btn label[for=tab2] em img,
+.value-content input[id=tab3]:checked ~ .tab-btn label[for=tab3] em img {
+  filter: invert()
+}
+.value-content input[id=tab1]:checked ~ .tab-btn label[for=tab1] span,
+.value-content input[id=tab2]:checked ~ .tab-btn label[for=tab2] span,
+.value-content input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
+  color: #f6b93b;
+}
+.value-content input[id=tab1]:checked ~ .tabs div:nth-child(1),
+.value-content input[id=tab2]:checked ~ .tabs div:nth-child(2),
+.value-content input[id=tab3]:checked ~ .tabs div:nth-child(3) {
+  display: block;
+}
+/* ---------------------- Section : faq --------------------- */
+.faq {
+  padding-bottom: 0;
+}
+.faq-inner {
+  width: 1300px;
+  margin: auto;
+}
+.faq-content {
+  font-family: 'NEXON Lv2 Gothic';
+  min-height: 800px;
+}
+.faq-accordion {
+  padding: 20px;
+}
+.faq-item {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.faq-item > div {
+  padding: 15px;
+}
+.faq-title {
+  font-size: 22px;
+  color: #777;
+  font-weight: bold;
+  cursor: pointer;
+}
+.faq-title:after {
+  content: '\f105';
+  font-family: fontawesome;
+  float: right;
+  transition: 0.3s;
+}
+.faq-desc {
+  font-size: 20px;
+  line-height: 1.5em;
+  color: #555;
+  display: none;
+}
+.faq-desc em {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+}
+/* Faq active class */
+.faq-item.active {
+  border: 1px solid #f6b93b;
+}
+.faq-item.active .faq-title {
+  color: #f6b93b;
+}
+.faq-item.active .faq-title:after {
+  transform: rotate(90deg);
+}
+.faq-item.active .faq-desc {
+  display: block;
+}
+/* ---------------------- Section : lush-pick --------------------- */
+.lush-pick {}
+.lush-inner {
+  width: 1300px;
+  margin: auto;
+}
+.lush-slider {}
+.lush-slider div {
+  text-align: center;
+}
+.lush-slider div img {
+  background-color: #FFFAF0;
+  margin: auto;
+  width: 300px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.lush-slider div span {
+  font-size: 20px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -50px;
+}
+/* ---------------------- Section : editor-pick --------------------- */
+.editor-pick {
+  padding-top: 120px;
+}
+.editor-inner {
+  width: 1300px;
+  margin: auto;
+}
+.editor-content {
+  overflow: hidden;
+}
+.editor-content > div {
+  float: left;
+  width: 50%;
+}
+.editor-left {}
+.editor-big {
+  width: 550px;
+  height: 550px;
+  position: relative;
+  cursor: pointer;
+  margin: auto;
+}
+.editor-big:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000007c;
+  transition: 0.5s;
+}
+.editor-big:hover:before {
+  background-color: #00000050;
+}
+.editor-big img {
+  width: inherit;
+  height: inherit;
+}
+.editor-headline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+.editor-headline h2 {
+  font-size: 90px;
+  line-height: 1.2em;
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+.editor-headline p {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.editor-right {}
+.editor-items {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.editor-items > div {
+  float: left;
+}
+.editor-thum {
+  width: 270px;
+  cursor: pointer;
+}
+.editor-thum:first-child {
+  margin-right: 30px;
+}
+.editor-thum:hover img {
+  transform: scale(1.1);
+}
+.editor-photo {
+  width: 260px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.editor-photo img {
+  width: inherit;
+  display: block;
+  transition: 0.5s;
+}
+.editor-thum em {
+  font-style: normal;
+  font-family: 'NEXON Lv2 Gothic';
+}
+.editor-thum span {
+  display: block;
+  font-size: 20px;
+}
+/* --------------------------- Footer --------------------------- */
+footer {
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 60px 0;
+}
+.footer-inner {
+  width: 1300px;
+  margin: auto;
+}
+.footer-content {
+  overflow: hidden;
+}
+.footer-content > div {
+  float: left;
+}
+.footer-logo {
+  width: 15%;
+}
+.footer-logo img {
+  width: 150px;
+  filter: invert(1);
+}
+.copyright {
+  width: 85%;
+}
+.policy-sns {
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.policy {
+  float: left;
+}
+.policy span {
+  display: block;
+  margin-bottom: 10px;
+}
+.policy span:first-child a {
+  color: #fff;
+}
+.policy span:first-child a:hover {
+  text-decoration: underline;
+}
+.policy span:first-child em {
+  color: #ddd;
+  font-style: normal;
+  margin: 10px;
+}
+.sns {
+  float: right;
+}
+.sns i {
+  color: #fff;
+  font-size: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 25px;
+  background-color: #ffffff31;
+  margin: 0 1px;
+}
+.address {
+  padding-top: 20px;
+}
+.address span {
+  display: block;
+  padding-bottom: 10px;
+}
+/* --------------------------- Go To Top --------------------------- */
+.top {
+  position: fixed;
+  bottom: -50px;
+  right: 30px;
+  background-color: #ddd;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 53px;
+  font-size: 30px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.top a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.top.active {
+  opacity: 1;
+  bottom: 30px;
+}
+
+/* ---------------- Slick Custom CSS ---------------- */
+.main-slider .slick-arrow {
+  display: none !important;
+}
+.lush-slider .slick-arrow {
+  display: none !important;
+}
+
+/* ---------------- Scroll Reveal CSS Anlmation ---------------- */
+.ltr {
+  animation: ltr 0.5s linear both;
+}
+.rtl {
+  animation: rtl 0.5s linear both;
+}
+.utd {
+  animation: utd 0.5s linear both;
+}
+@keyframes ltr {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes rtl {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes utd {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

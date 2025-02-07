@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUSH</title>
+    <link rel="icon" href="./images/favicon.png">
+    <!-- Jquery -->
+    <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider JS -->
+    <link rel="stylesheet" href="/plugin/slick/slick.css">
+    <link rel="stylesheet" href="/plugin/slick/slick-theme.css">
+    <script src="/plugin/slick/slick.js"></script>
+    <!-- TypeIt -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- Wow JS -->
+    <script src="/plugin/wow/wow.min.js"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="./custom.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="header-inner">
+          <div class="logo">
+            <a href="#">
+              <img src="./images/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="gnb">
+            <a href="#brand" data-text="BRAND"></a>
+            <a href="#value" data-text="VALUE"></a>
+            <a href="#faq" data-text="FAQ"></a>
+            <a href="#lush" data-text="LUSH PICK"></a>
+            <a href="#editor" data-text="EDITOR'S PICK"></a>
+          </div>
+        </div>
+        <div class="trigger"></div>
+      </header>
+      <!-- Section : welcome -->
+      <section class="welcome">
+        <div class="main-slider">
+          <img src="./images/main01.png" alt="main01">
+          <img src="./images/main03.png" alt="main02">
+          <img src="./images/main02.png" alt="main03">
+        </div>
+        <div class="welcome-heading">
+          <p>
+            <span>자연에서 얻은 신선한 재료와</span>
+            <span>동물 실험을 하지 않는 정직한 재료를 사용하여</span>
+          </p>
+          <em id="typing"></em>
+        </div>
+      </section>
+      <!-- Section : brand -->
+      <section id="brand" class="brand">
+        <div class="brand-inner">
+          <div class="headline-share">
+            <h1>BRAND</h1>
+          </div>
+          <div class="brand-content">
+            <div class="brand-photo ltr wow">
+              <img src="./images/brand01.png" alt="brand01">
+            </div>
+            <div class="brand-about rtl wow">
+              <h2>
+                러쉬는 배쓰 밤, 샤워젤리, 고체 샴푸와 같은 기발하고 혁신적인 제품을 선보입니다.
+              </h2>
+              <p>
+                특히 불필요한 포장을 없앤 고체 형태의 다양한 '네이키드
+                (Naked)' 제품을 개발하여 화장품 산업에서 혁명을 일으켜 왔습니다.
+              </p>
+            </div>
+          </div>
+          <div class="brand-content flex-order">
+            <div class="brand-about ltr wow">
+              <h2>
+                신선함은 러쉬 철학의 핵심입니다.
+              </h2>
+              <p>
+                신선한 과일, 채소, 에센셜 오일, 최소한의 보존제와 안전한 인공 성분을 사용하여 제품을 선보입니다. 러쉬의 모든 제품은 베지테리언(Vegetarian)이며, 그 중 약90%는 식물성 원료로만 만든 비건(Vegan)입니다.
+              </p>
+            </div>
+            <div class="brand-photo rtl wow">
+              <img src="./images/brand02.png" alt="brand02">
+            </div>
+          </div>
+          <div class="brand-content">
+            <div class="brand-photo ltr wow">
+              <img src="./images/brand03.png" alt="brand03">
+            </div>
+            <div class="brand-about rtl wow">
+              <h2>
+                이 모든 것은 ‘고객은 항상 옳다’는 믿음과 러쉬의 핵심 가치인 직원들의 진심이 모여 얻은 결실입니다.
+              </h2>
+              <p>
+                앞으로도 러쉬는 현시대에 필요한 제품과 서비스를 제공할 것입니다. 환경 보호를 위해 고민하고, 동물과 자연 그리고 사람이 조화로운 세상을 만들기 위한 도전과 혁신에 앞장섭니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section : value -->
+      <section id="value" class="value">
+        <div class="value-inner">
+          <div class="headline-share">
+            <h1>VALUE</h1>
+          </div>
+          <div class="value-content">
+            <input type="radio" name="value-tab" id="tab1" checked>
+            <input type="radio" name="value-tab" id="tab2">
+            <input type="radio" name="value-tab" id="tab3">
+            <div class="tab-btn">
+              <label for="tab1">
+                <em><img src="./images/value01.png" alt=""></em>
+                <span>신선한 화장품</span>
+              </label>
+              <label for="tab2">
+                <em><img src="./images/value02.png" alt=""></em>
+                <span>동물실험 반대</span>
+              </label>
+              <label for="tab3">
+                <em><img src="./images/value03.png" alt=""></em>
+                <span>사랑을 담은 수제</span>
+              </label>
+            </div>
+            <div class="tabs">
+              <div class="tab">
+                <h2>FRESH & SAFE COSMETICS</h2>
+                <p>
+                  우리는 유기농 과일과 채소, 최상의 에센셜 오일, 그리고 안전한 합성 원료로 신선하고 효과적인 제품을 만들 수 있음을 믿습니다.
+                </p>
+              </div>
+              <div class="tab">
+                <h2>FIGHTING ANIMAL TESTING</h2>
+                <p>
+                  우리는 동물실험을 하지 않는 회사들로부터 윤리적인 원료를 구입하고 인체에 테스트함으로써, 세상에 필요한 제품을 만들 수 있다고 믿습니다.
+                </p>
+              </div>
+              <div class="tab">
+                <h2>HANDMADE WITH LOVE</h2>
+                <p>
+                  우리는 행복한 사람이 행복한 제품을 만들고, 제조자의 얼굴 스티커를 제품 라벨에 붙임으로써 자부심을 가질 수 있다고 믿습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section : faq -->
+      <section id="faq" class="faq">
+        <div class="faq-inner utd wow">
+          <div class="headline-share">
+            <h1>FAQ</h1>
+          </div>
+          <div class="faq-content">
+            <div class="faq-accordion">
+              <div class="faq-item active">
+                <div class="faq-title">배송 기간은 얼마나 걸리나요?</div>
+                <div class="faq-desc">
+                  <em>1. 발송기준</em> 
+                  주말과 공휴일을 제외한 평일 오후 1시까지 결제 완료된 주문은 당일 발송됩니다. <br>
+                  배송은 우체국 택배를 통해 진행됩니다. <br><br>
+                  <em>2. 배송 소요 기간</em>
+                  택배사의 지연이 없을 경우 발송 후 1~2일 이내 상품을 받아보실 수 있습니다. <br>
+                  단, 도서/산간지역 및 군부대는 추가로 3~5일 정도 소요될 수 
+                  있습니다. <br><br>
+                  * 명절, 연휴 등 특정 기간에는 주문량 증가로 인해 배송이 지연될 수 있습니다.
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-title">배송비는 어떻게 계산되나요?</div>
+                <div class="faq-desc">
+                  <em>1. 무료배송</em>
+                  러쉬코리아 회원은 로그인 후 3만 원 이상 구매 시 무료배송 혜택을 받을 수 있습니다. <br><br>
+                  <em>2. 배송비</em>
+                  3만 원 미만 구매 시 : 주문 번호당 배송비 2,500원이 부과됩니다. <br>
+                  도서/사간지역 : 제주도를 포함한 도서산간 지역은 추가 배송비가 부과되지 않습니다. <br><br>
+                  * 비회원 구매 시 무료배송 혜택이 적용되지 않습니다. <br>
+                  * 프레쉬 세일 등 특정 기간에는 무료배송 혜택이 제한될 수 있습니다.
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-title">선물포장 가능한가요?</div>
+                <div class="faq-desc">
+                  러쉬는 재사용이 가능한 낫랩을 통해 선물포장을 도움 드리고 있습니다. 선물포장이 필요하시다면 아래 방법을 이용 부탁드립니다. <br><br>
+                  <em>러쉬의 선물포장 밥법</em>
+                  재사용 가능한 러쉬의 낫랩을 제품과 함께 구매해주세요. <br>
+                  제품 구매 시 배송메세지에 구매한 제품 중 선물포장이 필요한 제품을 함께 작성하여 선물 포장을 요청해주세요.
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-title">교환/반품이 불가한 경우는 어떤 경우인가요?</div>
+                <div class="faq-desc">
+                  전자상거래 등에서 소비자 보호에 관한 법률에 따라 다음의 경우 청약철회가 제한될 수 있습니다. <br><br>
+                  1. 고객님의 사용 또는 일부 소비에 의해 제품의 가치가 훼손된 경우 (제품의 개봉, 사용, 기프트 제품의 경우 포장 제거, 향수 혹은 보디스프레이 분사 등등) <br>
+                  2. 고객님의 단순 변심으로 교환/반품 신청이 제품 수령한 날로부터 7일이 경과한 경우 <br>
+                  3. 시간 경과에 따라 제품 등의 가치가 현저히 감소하여 재판매가 불가능한 경우 <br>
+                  4. 구매한 제품의 구성품이 누락된 경우 (기프트 텍, 리본, 스마트 샘플 등등)
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-title">자주 묻는 질문 이외의 문의사항은 어디로 연락하면 되나요?</div>
+                <div class="faq-desc">
+                  보다 빠르고 편리한 상담 서비스 제공을 위해, 2024년 12월 10일부터 러쉬코리아 홈페이지의 1:1 문의게시판과 고객센터 유선 상담이 종료되었습니다. <br>
+                  AI챗봇을 이용한 24시간 채팅서비스를 통해 문의사항에 대한 상담이 가능합니다. <br>
+                  러쉬 브랜드와 제품, 서비스 이용 중 문의사항이 있으신 경우, 오른쪽 하단[+] -> [메신저 모양]을 클릭하여 러쉬코리아 고객센터를 이용해 주세요. <br><br>
+                  * 러쉬톡으로 고객센터 담당자와 연결 시 성함, 연락처, 이메일 주소 등 개인정보 수집이 필요합니다. <br>
+                  * 챗봇과 러쉬톡 서비스 이용에 어려움이 있으시면 webmaster@lush.co.kr로 문의 부탁드립니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section : lush-pick -->
+      <section id="lush" class="lush-pick">
+        <div class="lush-inner">
+          <div class="headline-share">
+            <h1>LUSH PICK</h1>
+          </div>
+          <div class="lush-slider">
+            <div>
+              <img src="./images/item-01.png" alt="item-01">
+              <span>마스크 오브 매그너민티</span>
+            </div>
+            <div>
+              <img src="./images/item-02.png" alt="item-02">
+              <span>수퍼 밀크</span>
+            </div>
+            <div>
+              <img src="./images/item-03.png" alt="item-03">
+              <span>써니사이드</span>
+            </div>
+            <div>
+              <img src="./images/item-04.png" alt="item-04">
+              <span>스월 오브 해피니스</span>
+            </div>
+            <div>
+              <img src="./images/item-05.png" alt="item-05">
+              <span>트와일라잇</span>
+            </div>
+            <div>
+              <img src="./images/item-06.png" alt="item-06">
+              <span>슬리피 버블 바</span>
+            </div>
+            <div>
+              <img src="./images/item-07.png" alt="item-07">
+              <span>대디-오</span>
+            </div>
+            <div>
+              <img src="./images/item-08.png" alt="item-08">
+              <span>로즈 아르간 보디 컨디셔너</span>
+            </div>
+            <div>
+              <img src="./images/item-09.png" alt="item-09">
+              <span>선라이즈</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section : editor-pick -->
+      <section id="editor" class="editor-pick">
+        <div class="editor-inner">
+          <div class="editor-content">
+            <div class="editor-left ltr wow">
+              <div class="editor-big">
+                <img src="./images/editor01.jpg" alt="poster">
+                <div class="editor-headline">
+                  <h2>EDITOR PICK</h2>
+                  <p id="typing-editor"></p>
+                </div>
+              </div>
+            </div>
+            <div class="editor-right rtl wow">
+              <div class="editor-items">
+                <div class="editor-thum">
+                  <div class="editor-photo">
+                    <img src="./images/thum01.jpeg" alt="thum01">
+                  </div>
+                  <em>ISSUE 01</em>
+                  <span>코앞의 겨울, 피부를 지켜줄 촉촉 보습 케어 루틴</span>
+                </div>
+                <div class="editor-thum">
+                  <div class="editor-photo">
+                    <img src="./images/thum02.jpeg" alt="thum02">
+                  </div>
+                  <em>ISSUE 02</em>
+                  <span>핑크빛 듀오의 마법이 스며든 윤기 나는 머릿결</span>
+                </div>
+              </div>
+              <div class="editor-items">
+                <div class="editor-thum">
+                  <div class="editor-photo">
+                    <img src="./images/thum03.jpeg" alt=""thum03>
+                  </div>
+                  <em>ISSUE 03</em>
+                  <span>장바구니를 신선함으로 가득 채우고 싶다면</span>
+                </div>
+                <div class="editor-thum">
+                  <div class="editor-photo">
+                    <img src="./images/thum04.jpeg" alt="thum04">
+                  </div>
+                  <em>ISSUE 04</em>
+                  <span>포근하고 아늑한 크리스마스를 꿈꾼다면</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <div class="footer-inner">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <img src="./images/logo.png" alt="">
+            </div>
+            <div class="copyright">
+              <div class="policy-sns">
+                <div class="policy">
+                  <span>
+                    <a href="#none">개인정보처리방침</a> <em>|</em>
+                    <a href="#none">이용약관</a>
+                  </span>
+                  <span>
+                    COPYRIGHT © LUSHKOREA.CO.LTD.ALL RIGHTS RESERVED.
+                  </span>
+                </div>
+                <div class="sns">
+                  <a href="#none"><i class="xi-youtube-play"></i></a>
+                  <a href="#none"><i class="xi-kakaotalk"></i></a>
+                  <a href="#none"><i class="xi-twitter"></i></a>
+                  <a href="#none"><i class="xi-kakaostory"></i></a>
+                  <a href="#none"><i class="xi-naver"></i></a>
+                </div>
+              </div>
+              <div class="address">
+                <span>
+                  주식회사 러쉬코리아 | 대표이사 : 우미령 | 사업자 등록번호 : 201-81-77964 사업자정보확인 | 개인정보보호책임자 : 장승웅
+                </span>
+                <span>
+                  서울 강남구 학동로 336 (메이트리 빌딩(matree B/D)) 1층 주식회사 러쉬코리아 | webmaster@lush.co.kr
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Go To Top -->
+    <div class="top">
+      <a href="#"><i class="fa fa-angle-up"></i></a>
+    </div>
+  </body>
+</html>

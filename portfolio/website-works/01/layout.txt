@@ -1,0 +1,92 @@
+header
+  .header-inner
+    .logo > a > img
+    .gnb > (a*5)
+
+section.welcome
+  .main-slider
+  .welcome-heading 
+    p > span 
+    em
+
+section.brand
+  .brand-inner
+    .headline-share
+      h1
+    .brand-content
+      .brand-photo
+        img*1
+      .brand-about
+        h2
+        p
+    .brand-content
+      .brand-about
+        h2
+        p
+      .brand-photo
+        img*1
+    .brand-content
+      .brand-photo
+        img*1
+      .brand-about
+        h2
+        p
+
+section.value
+  .value-inner
+      .headline-share
+        h1
+      .value-content
+        .tab-btn > (label*3)
+        .tabs > (.tab)*3
+
+section.faq
+  .faq-inner
+      .headline-share
+        h1
+      .faq-content
+        .faq-accordion
+            (.faq-item
+              .fap-title
+              .fap-desc) *5
+
+section.lush-pick
+  .lush-slider
+
+section.editor-pick
+  .editor-inner
+  .editor-content
+    .editor-left
+      .editor-bic
+        img
+        .editor-headline
+          h2
+          p
+    .editor-right
+      .editor-items
+        .editor-thum
+          .editor-photo
+            img
+          em
+          span
+        .editor-thum
+          .editor-photo
+            img
+          em
+          span
+
+footer
+  .footer-inner
+    .footer-content
+      .footer-logo
+      .copyright
+        .policy-sns
+          .policy
+            span > a > em 
+          .sns
+            a > xeicon
+        .address
+          span * 2
+
+.top
+  a > xeicon

@@ -1,0 +1,218 @@
+@media (max-width: 768px) {
+  /* Default CSS */
+  section {
+    padding: 50px 15px;
+  }
+  /* Common CSS */
+  .headline-share h1 {
+    font-size: 42px;
+  }
+  /* ---------------------- Header --------------------- */
+  .header-inner {
+    width: 100%;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+  .gnb {
+    float: none;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -230px;
+    width: 220px;
+    height: 100vh;
+    box-shadow: -3px 0 3px #0000001e;
+    padding-top: 50px;
+    transition: 0.5s;
+  }
+  .gnb.active {
+    right: 0;
+  }
+  .gnb a {
+    display: block;
+  }
+  /* Trigger */
+  .trigger {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 26px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .trigger:before {
+    content: '\e91c';
+    font-family: xeicon;
+  }
+  .trigger.active:before {
+    content: '\e921';
+  }
+  /* ---------------------- Section : welcome --------------------- */
+  .welcome-heading {
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 20px;
+  }
+  .welcome-heading p span {
+    font-size: 28px;
+  }
+  .welcome-heading em {
+    font-size: 40px;
+  }
+  /* ---------------------- Section : brand --------------------- */
+  .brand-inner {
+    width: 100%;
+  }
+  .brand-content {
+    margin: 50px 0;
+  }
+  .brand-content > div {
+    float: none;
+    width: 100%;
+  }
+  .brand-photo img {
+    width: 100%;
+  }
+  .brand-about {
+    padding: 0 15px;
+    padding-top: 50px;
+  }
+  .brand-about h2 {
+    font-size: 30px;
+  }
+  /* Change Order with flex */
+  .brand-content.flex-order {
+    display: flex;
+    flex-direction: column;
+  }
+  .brand-content.flex-order > div:first-child {
+    order: 1;
+  }
+  /* ---------------------- Section : value --------------------- */
+  .value {
+    padding-bottom: 30px;
+  }
+  .value-inner {
+    width: 100%;
+  }
+  .value-content {
+    padding-top: 20px;
+  }
+  .value-content > div {
+    float: none;
+    width: 100%;
+  }
+  .tab-btn label em {
+    width: 90px;
+    height: 90px;
+  }
+  .tab-btn label em img {
+    width: 53px;
+  }
+  .tab {
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .tab h2 {
+    font-size: 30px;
+  }
+  .tab p {
+    font-size: 17px;
+  }
+  /* ---------------------- Section : faq --------------------- */
+  .faq {
+    padding-bottom: 50px;
+  }
+  .faq-inner {
+    width: 100%;
+  }
+  .faq-accordion {
+    padding: 0;
+  }
+  .faq-title:after {
+    display: none;
+  }
+  /* ---------------------- Section : lush-pick --------------------- */
+  .lush-inner {
+    width: 100%;
+  }
+  .lush-slider div img {
+    width: 230px;
+  }
+  /* ---------------------- Section : editor-pick --------------------- */
+  .editor-pick {
+    padding-top: 50px;
+  }
+  .editor-inner {
+    width: 100%;
+  }
+  .editor-content > div {
+    float: none;
+    width: 100%;
+  }
+  .editor-left {
+    margin-bottom: 15px;
+  }
+  .editor-big {
+    width: 100%;
+    height: 330px;
+  }
+  .editor-headline h2 {
+    font-size: 65px;
+  }
+  .editor-headline p {
+    font-size: 18px;
+  }
+  .editor-items {
+    margin-bottom: 0;
+  }
+  .editor-thum {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .editor-photo {
+    width: 100%;
+  }
+  .editor-thum em {
+    font-size: 20px;
+  }
+  .editor-thum span {
+    font-size: 26px;
+    padding-top: 5px;
+  }
+  /* --------------------------- Footer --------------------------- */
+  .footer-inner {
+    width: 100%;
+  }
+  .footer-content > div {
+    float: none;
+  }
+  .footer-logo {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 80px;
+  }
+  .footer-logo img {
+    width: 100%;
+  }
+  .copyright {
+    width: 100%;
+    text-align: center;
+  }
+  .policy-sns {
+    padding: 0 20px 20px 20px;
+  }
+  .sns {
+    float: none;
+  }
+  .address {
+    padding: 20px 20px 0 20px;
+  }
+}
