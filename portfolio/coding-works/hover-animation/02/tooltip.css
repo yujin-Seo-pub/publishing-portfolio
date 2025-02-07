@@ -1,0 +1,95 @@
+/* Font - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+.container {
+  text-align: center;
+  width: 1200px;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  bottom: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logo img {
+  width: 180px;
+  height: 80px;
+}
+.content {
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.content img {
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.content p {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  width: 360px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  top: -160px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+}
+.content p span {
+  display: block;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.content p:after {
+  content: '';
+  position: absolute;
+  background-color: #333;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translateX(-50%);
+  bottom: -7px;
+  left: 50%;
+}
+.content:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+.content img:hover {
+  transform: scale(1.1);
+}
+.content:hover:nth-child(2) img {
+  box-shadow: 0 0 20px red;
+}
+.content:hover:nth-child(3) img {
+  box-shadow: 0 0 20px green;
+}
+.content:hover:nth-child(4) img {
+  box-shadow: 0 0 20px yellow;
+}
+.content:hover:nth-child(5) img {
+  box-shadow: 0 0 20px purple;
+}
+.content:hover:nth-child(6) img {
+  box-shadow: 0 0 20px blue;
+}

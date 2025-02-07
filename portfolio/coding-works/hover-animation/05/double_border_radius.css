@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #fff;
+}
+.square {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 50px;
+}
+.square span {
+  position: absolute;
+  border: 1px solid #ffb8b8;
+  width: inherit;
+  height: inherit;
+  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+  transition: 0.5s;
+}
+.square:hover span {
+  background-color: #ffb8b8;
+  border: #ffb8b8;
+}
+.square:hover span:nth-child(1) {
+  opacity: 0.3
+}
+.square:hover span:nth-child(2) {
+  opacity: 0.5;
+}
+.square:hover span:nth-child(3) {
+  opacity: 0.7;
+}
+.square span:nth-child(1) {
+  animation: circle 3s linear infinite;
+}
+.square span:nth-child(2) {
+  animation: circle 5s linear infinite;
+  animation-direction: reverse;
+}
+.square span:nth-child(3) {
+  animation: circle 10s linear infinite;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  text-align: center;
+  color: #333;
+  transition: 0.3s;
+}
+.content img {
+  width: 120px;
+  border-radius: 50%;
+}
+.content h1 {
+  margin-top: 10px;
+}
+.content p {
+  margin-bottom: 30px;
+}
+.content a {
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #333;
+  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+  padding: 10px;
+  transition: 0.5s;
+}
+.content a:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #ffb8b8;
+}
+.square:hover .content {
+  color: #fff;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

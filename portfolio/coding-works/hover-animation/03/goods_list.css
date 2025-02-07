@@ -1,0 +1,86 @@
+/* Font - Noto Sans Korean */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #fff;
+  font-family: "Noto Sans KR", serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.goods a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  padding: 8px 30px;
+  font-size: 18px;
+  text-align: center;
+}
+.items {
+  text-align: center;
+  box-shadow: 0 0 20px #bbb;
+  border-radius: 5px;
+  padding: 20px;
+}
+.item {
+  display: inline-block;
+  width: 280px;
+  height: 350px;
+  position: relative;
+  margin: 13px;
+}
+.item:hover .caption {
+  opacity: 1;
+}
+.item img {
+  width: inherit;
+  height: inherit;
+}
+.caption {
+  width: 280px;
+  height: 350px;
+  background-color: #00000070;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-top: 80px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.caption h3 {
+  font-size: 24px;
+}
+.caption p {
+  font-size: 18px;
+}
+.caption p em {
+  text-decoration: line-through;
+  font-style: normal;
+}
+.caption button {
+  outline: none;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.caption button:hover {
+  background-color: #ddd;
+  color: #000;
+}
