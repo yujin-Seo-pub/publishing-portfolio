@@ -1,0 +1,412 @@
+/* XEicon CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+/* Fontawesome 4.7 */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/*  Font - Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Font - SUIT-Medium 한글*/
+@font-face {
+  font-family: "SUIT-Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Font - Sorts Mill Goudy 영어*/
+@import url("https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap");
+
+/* Common CSS */
+:root {
+  --inner-width: 1280px;
+  --color-highlight: #ffe4c4; /* 네비비포 타이틀 */
+  --color-bright-yarrow: #fdcb6e; /* 헤더엑티브 */
+  --color-amber: #fff8e1; /* 홈 배경색 */
+  --font-color-gray: rgb(102, 102, 102); /* 홈 p태그 */
+}
+.section-inner {
+  width: var(--inner-width);
+  margin: auto;
+}
+.section-title {
+  text-align: center;
+}
+.section-title h1 {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.section-title h1::after {
+  content: '';
+  position: absolute;
+  background-color: var(--color-highlight);
+  width: 100%;
+  height: 30px;
+  bottom: -2px;
+  left: 0;
+  z-index: -1;
+}
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+  color: #222 !important;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
+}
+em {
+  font-style: normal;
+}
+
+/* Default CSS */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #222 ;
+  font-family: "SUIT-Medium";
+}
+section {
+  padding: 100px;
+}
+
+/* -------------------- Header -------------------- */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  transition: 0.5s;
+}
+header.active {
+  background-color: var(--color-bright-yarrow);
+  opacity: 0.9;
+}
+.header-inner {
+  width: var(--inner-width);
+  margin: auto;
+  height: 80px;
+  line-height: 80px;
+}
+.logo {
+  float: left;
+  height: inherit;
+}
+.logo a img {
+  width: 105px;
+  display: block;
+}
+nav {
+  float: right;
+  height: inherit;
+}
+nav a {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 30px;
+  position: relative;
+}
+nav a:before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-highlight);
+  width: 0;
+  height: 12px;
+  bottom: -2px;
+  transition: 0.5s;
+  z-index: -1;
+}
+nav a:hover:before {
+  width: 100%;
+}
+/* -------------------- Section - home -------------------- */
+.home {
+  height: 100vh;
+  padding-top: 120px;
+  background-color: var(--color-amber);
+  /* background: var(--color-amber) url(/images/deco.png) no-repeat;
+  background-size: 250px;
+  background-position: right 50px bottom 50px; */
+  /* background: var(--color-amber) url(/images/flower.png) no-repeat;
+  background-size: 200px;
+  background-position: right 50px bottom 50px; */
+}
+.home-wrap {
+  /* height: 530px; 노트북 */
+  height: 570px;
+  position: relative;
+
+}
+.home-wrap > div {
+  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+}
+.home-text {
+  border: 2px solid goldenrod;
+  width: 80%;
+  height: inherit;
+  padding: 120px 80px 80px 125px;
+  margin: 0 40px;
+  color: var(--font-color-gray);
+  position: absolute;
+}
+.home-text:nth-child(2) {
+  transform: rotate(5deg);
+}
+.home-text span {
+  font-size: 24px;
+}
+.home-text h2 {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 80px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #222;
+}
+.home-text p {
+  line-height: 1.8em;
+  font-size: 18px;
+  margin: 0;
+}
+.home-photo {
+  width: 340px;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home-photo:hover img {
+  transform: scale(1.05);
+}
+.home-photo img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: right;
+  transition: 1s;
+}
+.home-deco {
+  position: absolute;
+  right: -70px;
+  bottom: 20px;
+}
+.home-deco img {
+  width: 250px;
+}
+/* -------------------- Section - about -------------------- */
+.about {}
+.about-content {
+  height: 500px;
+}
+/* -------------------- Section - skill -------------------- */
+.skill {
+  background-color: var(--color-amber);
+}
+.skill-content {
+  height: 480px;
+  padding: 20px 15px;
+  margin-top: 10px;
+}
+.skill-box {
+  width: 50%;
+  height: 120px;
+  float: left;
+  margin-bottom: 40px;
+}
+.skill-box > span {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.skill-box .name {
+  width: 120px;
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+}
+.skill-box:nth-child(4) .name,
+.skill-box:nth-child(5) .name {
+  padding-top: 39px;
+}
+.skill-box .name:after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border: 5px solid var(--color-highlight);
+  border-radius: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skill-box .name em {
+  display: block;
+  color: #424242;
+}
+.skill-box .desc {
+  width: 480px;
+  line-height: 1.7em;
+  padding: 7px 0 0 20px;
+  color: var(--font-color-gray);
+}
+.skill-box:nth-child(1) .desc {
+  padding-top: 20px;
+}
+.skill-box:nth-child(5) .desc {
+  padding-top: 35px;
+}
+/* -------------------- Section - practical-pub -------------------- */
+.practical-content {
+  min-height: 520px;
+}
+.tab-btn {
+  text-align: center;
+  padding: 10px 0;
+}
+.tab-btn a {
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  margin: 20px;
+}
+.tab-btn a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 12px;
+  background-color: var(--color-highlight);
+  bottom: -1px;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.tab-btn a:hover:before {
+  width: 100%;
+}
+.tab-btn a.active:before {
+  width: 100%;
+}
+.tabs {
+  padding: 10px;
+}
+.tab {
+  width: 100%;
+  display: none;
+}
+.tab.active {
+  display: block;
+}
+.practical-list a {
+  margin: 20px;
+}
+.practical-list img {
+  width: 314px;
+  height: 180px;
+  border: 1px solid #ddd;
+}
+.uk-icon uk-slidenav-next uk-slidenav {
+  color: #fff;
+}
+/* -------------------- Section - web-pub -------------------- */
+.web-pub {
+  background-color: var(--color-amber);
+}
+.web-pub input {
+  display: none;
+}
+.web-content {
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
+}
+.web-content .prev,
+.web-content .next {
+  position: absolute;
+  font-size: 50px;
+  color: var(--font-color-gray);
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.web-content .prev {
+  left: 0;
+}
+.web-content .next {
+  right: 0;
+}
+.web-btn {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+.web-btn label {
+  display: inline-block;
+  background-color: var(--color-highlight);
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.web-list {}
+.web-item {
+  display: none;
+}
+.web-item img {
+  width: 700px;
+}
+.web-item h2 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.web-desc {
+  display: inline-block;
+  text-align-last: left;
+  margin-bottom: 5px;
+}
+.web-desc span {
+  display: block;
+  line-height: 1.8em;
+}
+.web-desc span em {
+  margin: 8px;
+}
+.open-btn a {
+  margin: 10px;
+  border: 1px solid var(--font-color-gray);
+}
+.web-pub input[id=web1]:checked ~ .web-btn label[for=web1],
+.web-pub input[id=web2]:checked ~ .web-btn label[for=web2],
+.web-pub input[id=web3]:checked ~ .web-btn label[for=web3] {
+  background-color: var(--color-bright-yarrow);
+}
+.web-pub input[id=web1]:checked ~ .web-list .web-item:nth-child(1),
+.web-pub input[id=web2]:checked ~ .web-list .web-item:nth-child(2),
+.web-pub input[id=web3]:checked ~ .web-list .web-item:nth-child(3) {
+  display: block;
+}
+/* -------------------- Section - epilogue -------------------- */
