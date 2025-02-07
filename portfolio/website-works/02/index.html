@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롯데월드</title>
+    <link rel="icon" href="favicon">
+    <!-- Jquery -->
+    <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Wow JS -->
+    <script src="/plugin/wow/wow.min.js"></script>
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="./custom.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="header-inner">
+          <div class="logo">
+            <a href="#"><img src="./images/logo.png" alt="logo"></a>
+          </div>
+          <div class="trigger">
+            <a href="#none"><i class="xi-bars open-modal"></i></a>
+          </div>
+          <div class="util">
+            <a href="#none">로그인</a>
+            <a href="#none">회원가입</a>
+          </div>
+        </div>
+      </header>
+      <!-- Section - Side Menu Modal -->
+      <section class="modal active">
+        <div class="modal-inner">
+          <a href="#none" class="close-btn active"><i class="xi-close"></i></a>
+          <div class="modal-category active">
+            <div class="modal-title">
+              <h2>즐길거리</h2>
+            </div>
+            <div class="modal-item">
+              <a href="#none">어트랙션</a>
+              <a href="#none">페스티벌</a>
+              <a href="#none">공연</a>
+              <a href="#none">다이닝/쇼핑</a>
+              <a href="#none">나의 월드 mbti는?</a>
+            </div>
+          </div>
+          <div class="modal-category">
+            <div class="modal-title">
+              <h2>요금/우대혜택</h2>
+            </div>
+            <div class="modal-item">
+              <a href="#none">이용요금</a>
+              <a href="#none">이달의 혜택</a>
+              <a href="#none">연간이용</a>
+              <a href="#none">롯데월드카드</a>
+            </div>
+          </div>
+          <div class="modal-category">
+            <div class="modal-title">
+              <h2>이용가이드</h2>
+            </div>
+            <div class="modal-item">
+              <a href="#none">운영/운휴</a>
+              <a href="#none">파크이용안내</a>
+              <a href="#none">편의시설/제도</a>
+              <a href="#none">오시는 길</a>
+              <a href="#none">가이드맵</a>
+            </div>
+          </div>
+          <div class="modal-category">
+            <div class="modal-title">
+              <h2>소통서비스</h2>
+            </div>
+            <div class="modal-item">
+              <a href="#none">공지사항</a>
+              <a href="#none">자주 묻는 질문</a>
+              <a href="#none">고객소리함</a>
+            </div>
+          </div>
+          <div class="modal-category">
+            <div class="modal-title">
+              <h2>더 알아보기</h2>
+            </div>
+            <div class="modal-item">
+              <a href="#none">캐릭터소개</a>
+              <a href="#none">다시만난월드 : 캐릭터 전시회</a>
+            </div>
+          </div>
+          <div class="modal-category">
+            <div class="modal-title">
+              <h2>리뷰</h2>
+            </div>
+            <div class="modal-item">
+              <a href="#none">리뷰</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section - welcome -->
+      <section class="welcome">
+        <div class="welcome-inner">
+          <div class="search">
+            <input type="text" placeholder="검색어를 입력하세요.">
+          </div>
+          <ul class="main-category">
+            <li><a href="#none">
+              <img src="./images/category01.png" alt="category01"><span>예매</span>
+            </a></li>
+            <li><a href="#none">
+              <img src="./images/category02.png" alt="category02"><span>단체</span>
+            </a></li>
+            <li><a href="#none">
+              <img src="./images/category03.png" alt="category03"><span>기업체</span>
+            </a></li>
+            <li><a href="#none">
+              <img src="./images/category04.png" alt="category04"><span>상품몰</span>
+            </a></li>
+            <li><a href="#none">
+              <img src="./images/category05.png" alt="category05"><span>SEOUL SKY</span>
+            </a></li>
+            <li><a href="#none">
+              <img src="./images/category06.png" alt="category06"><span>아쿠아리움</span>
+            </a></li>
+            <li><a href="#none">
+              <img src="./images/category07.png" alt="category07"><span>롯데워터파크</span>
+            </a></li>
+            <li><a href="#none">
+              <img src="./images/category08.png" alt="category08"><span>아이스링크</span>
+            </a></li>
+          </ul>
+          <div class="main-left">
+            <img src="./images/character-01.png" alt="character-01">
+          </div>
+          <div class="main-right">
+            <img src="./images/character-02.png" alt="character-02">
+          </div>
+        </div>
+      </section>
+      <!-- Section - benefit -->
+      <section class="benefit">
+        <div class="benefit-inner">
+          <div class="headline-share">
+            <h1>나에게 꼭 맞는 혜택은?</h1>
+            <p>현재 진행 중인 할인혜택을 알아보세요.</p>
+          </div>
+          <div class="benefit-content">
+            <div class="benefit-item utd wow">
+              <a href="#none">
+                <img src="./images/benefit-01.jpg" alt="benefit-01">
+                <span>28,800원</span>
+                <h2>제휴카드 프로모션</h2>
+              </a>
+            </div>
+            <div class="benefit-item utd wow" data-wow-delay="0.2s">
+              <a href="#none">
+                <img src="./images/benefit-02.jpg" alt="benefit-02">
+                <span>38,400원</span>
+                <h2>푸른뱀의 해에는 월드로!</h2>
+              </a>
+            </div>
+            <div class="benefit-item utd wow" data-wow-delay="0.4s">
+              <a href="#none">
+                <img src="./images/benefit-03.jpg" alt="benefit-03">
+                <span>43,200원</span>
+                <h2>교복은 롯데월드</h2>
+              </a>
+            </div>
+          </div>
+          <div class="benefit-btn">
+            <button>더 많은 혜택 보기</button>
+          </div>
+        </div>
+      </section>
+      <!-- Section - ride -->
+      <section class="ride">
+        <div class="ride-inner">
+          <div class="headline-share utd wow">
+            <h1>재미있고 다양한 어트랙션!</h1>
+            <p>원하는 어트랙션을 골라서 체험해보세요.</p>
+          </div>
+          <div class="ride-content utd wow">
+            <div class="ride-btn">
+              <a data-alt="tab1" href="#none" class="active">실내에서 쾌적하게</a>
+              <a data-alt="tab2" href="#none">야외에서 신나게</a>
+              <a data-alt="tab3" href="#none">아이들과 다같이</a>
+            </div>
+            <div class="ride-tabs">
+              <div id="tab1" class="ride-list active">
+                <div class="ride-item">
+                  <img src="./images/in-01.jpg" alt="in-01">
+                  <div class="item-content">
+                    <h2>후룸라이드</h2>
+                    <span>색다른 모험, 쥬라기 시대로</span>
+                  </div>
+                </div>
+                <div class="ride-item">
+                  <img src="./images/in-02.jpg" alt="in-02">
+                  <div class="item-content">
+                    <h2>스페인 해적선</h2>
+                    <span>거친 파도와 같은 아찔함!</span>
+                  </div>
+                </div>
+                <div class="ride-item">
+                  <img src="./images/in-03.jpg" alt="in-03">
+                  <div class="item-content">
+                    <h2>파라오의 분노</h2>
+                    <span>실감나는 라이드를 즐기자!</span>
+                  </div>
+                </div>
+                <div class="ride-item">
+                  <img src="./images/in-04.jpg" alt="in-04">
+                  <div class="item-content">
+                    <h2>신밧드의 모험</h2>
+                    <span>신비한 모험을 떠나요~</span>
+                  </div>
+                </div>
+                <div class="item-btn">
+                  <button>더 많은 어트랙션 보기</button>
+                </div>
+              </div>
+              <div id="tab2" class="ride-list">
+                <div class="ride-item">
+                  <img src="./images/out-01.jpg" alt="out-01">
+                  <div class="item-content">
+                    <h2>아트란티스</h2>
+                    <span>어트랙션의 혁명 최고의 스릴</span>
+                  </div>
+                </div>
+                <div class="ride-item">
+                  <img src="./images/out-02.jpg" alt="out-02">
+                  <div class="item-content">
+                    <h2>번지드롭</h2>
+                    <span>번지점프의 짜릿한 묘미!</span>
+                  </div>
+                </div>
+                <div class="ride-item">
+                  <img src="./images/out-03.jpg" alt="out-03">
+                  <div class="item-content">
+                    <h2>자이로스핀</h2>
+                    <span>자이로 시리즈 3번째</span>
+                  </div>
+                </div>
+                <div class="ride-item">
+                  <img src="./images/out-04.jpg" alt="out-04">
+                  <div class="item-content">
+                    <h2>회전그네</h2>
+                    <span>빙글빙글 멈출 수 없는 재미</span>
+                  </div>
+                </div>
+                <div class="item-btn">
+                  <button>더 많은 어트랙션 보기</button>
+                </div>
+              </div>
+              <div id="tab3" class="ride-list">
+                <div class="ride-item">
+                  <img src="./images/children-01.jpg" alt="children-01">
+                  <div class="item-content">
+                    <h2>스윙팡팡</h2>
+                    <span>로더와 친구들 함께 팡팡~</span>
+                  </div>
+                </div>
+                <div class="ride-item">
+                  <img src="./images/children-02.jpg" alt="children-02">
+                  <div class="item-content">
+                    <h2>유레카</h2>
+                    <span>높이높이 날아올라요~</span>
+                  </div>
+                </div>
+                <div class="ride-item">
+                  <img src="./images/children-03.jpg" alt="children-03">
+                  <div class="item-content">
+                    <h2>점핑피쉬</h2>
+                    <span>신나는 해저여행</span>
+                  </div>
+                </div>
+                <div class="ride-item">
+                  <img src="./images/children-04.jpg" alt="children-04">
+                  <div class="item-content">
+                    <h2>매직붕붕카</h2>
+                    <span>다같이 신나게 경주해요!</span>
+                  </div>
+                </div>
+                <div class="item-btn">
+                  <button>더 많은 어트랙션 보기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section - parade -->
+      <section class="parade">
+        <div class="parade-inner">
+          <div class="headline-share">
+            <h1>다양한 공연과 퍼레이드 한눈에 보기</h1>
+            <p>다양한 공연정보를 확인해보세요.</p>
+          </div>
+          <div class="swiper parade-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="photo">
+                  <img src="./images/parade-01.jpg" alt="parade-01">
+                </div>
+                <div class="desc">
+                  <h2>매직캐슬 라이츠업</h2>
+                  <p>
+                    매직캐슬에서 마법사 로티의 주문과 함께 펼쳐지는 환상적인 3D 멀티미디어 맵핑쇼!
+                  </p>
+                  <a href="#none">자세히 보기</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="photo">
+                  <img src="./images/parade-02.jpg" alt="parade-02">
+                </div>
+                <div class="desc">
+                  <h2>35주년 퍼레이드</h2>
+                  <p>
+                    전 세계 빛이 모여 롯데월드 35주년을 축하하는 환상적인 빛의 퍼레이드!
+                  </p>
+                  <a href="#none">자세히 보기</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="photo">
+                  <img src="./images/parade-03.jpg" alt="parade-03">
+                </div>
+                <div class="desc">
+                  <h2>마법성냥과 꿈꾸는 밤</h2>
+                  <p>
+                    마음씨 착한 성냥팔이 소녀와 함께 떠나는 환상적인 꿈의 세계
+                  </p>
+                  <a href="#none">자세히 보기</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="photo">
+                  <img src="./images/parade-04.jpg" alt="parade-04">
+                </div>
+                <div class="desc">
+                  <h2>로티스 어드벤처 퍼레이드</h2>
+                  <p>
+                    롯데월드를 대표하는 메이져 어트랙션을 테마로 한 환타지 퍼레이드드
+                  </p>
+                  <a href="#none">자세히 보기</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="photo">
+                  <img src="./images/parade-05.jpg" alt="parade-05">
+                </div>
+                <div class="desc">
+                  <h2>민속 한마당</h2>
+                  <p>
+                    얼쑤 좋다! 새해엔 역시 민속공연이죠! 신명나는 우리가락에 맞춰 어깨를 들썩들썩, 엉덩일 씰룩씰룩!
+                  </p>
+                  <a href="#none">자세히 보기</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="photo">
+                  <img src="./images/parade-06.jpg" alt="parade-06">
+                </div>
+                <div class="desc">
+                  <h2>Play with Friends</h2>
+                  <p>
+                    신년 맞이 행운 가득한 거리 상황극과 포토타임! 이야기와 함께하는 포토타임으로 재미 2배, 즐거움 2배!
+                  </p>
+                  <a href="#none">자세히 보기</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="photo">
+                  <img src="./images/parade-07.jpg" alt="parade-07">
+                </div>
+                <div class="desc">
+                  <h2>매직 인 더 나이트</h2>
+                  <p>
+                    롯데월드에서 경험한 마법같은 하루, 즐거우셨나요? 우리는 항상 여기에서 여러분을 다시 만날 날을 기다리고 있을거에요. 또 만나요요!
+                  </p>
+                  <a href="#none">자세히 보기</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="photo">
+                  <img src="./images/parade-08.jpg" alt="parade-08">
+                </div>
+                <div class="desc">
+                  <h2>Smile with Friends</h2>
+                  <p>
+                    캐릭터와 함께 하는 포토타임
+                  </p>
+                  <a href="#none">자세히 보기</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="photo">
+                  <img src="./images/parade-09.jpg" alt="parade-09">
+                </div>
+                <div class="desc">
+                  <h2>모던 재즈 앙상블</h2>
+                  <p>
+                    재즈 스타일의 밴드 공연연
+                  </p>
+                  <a href="#none">자세히 보기</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="photo">
+                  <img src="./images/parade-10.jpg" alt="parade-10">
+                </div>
+                <div class="desc">
+                  <h2>월드 팝 밴드 쇼</h2>
+                  <p>
+                    신나는 라틴음악을 연주하는 여성 브라스밴드 공연
+                  </p>
+                  <a href="#none">자세히 보기</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="photo">
+                  <img src="./images/parade-11.jpg" alt="parade-11">
+                </div>
+                <div class="desc">
+                  <h2>키디밴드</h2>
+                  <p>
+                    귀여운 키디밴드가 들려주는 어린이들을 위한 신나는는 음악이 궁금하다면 키디존으로 모여보세요!
+                  </p>
+                  <a href="#none">자세히 보기</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="photo">
+                  <img src="./images/parade-12.jpg" alt="parade-12">
+                </div>
+                <div class="desc">
+                  <h2>파랑이 생일파티 대소동</h2>
+                  <p>
+                    신나고 재미있는 어린이 라이브 캐릭터 뮤지컬 ★ 공연 10분 전 입장해 주시기 바랍니다 ★
+                  </p>
+                  <a href="#none">자세히 보기</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="photo">
+                  <img src="./images/parade-13.jpg" alt="parade-13">
+                </div>
+                <div class="desc">
+                  <h2>색소폰 앙상블</h2>
+                  <p>
+                    거리에 울려 퍼지는 우렁찬 섹소폰 밴드공연 소리!
+                  </p>
+                  <a href="#none">자세히 보기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- Section - special -->
+      <section class="special">
+        <div class="special-inner">
+          <div class="headline-share">
+            <h1>좀 더 특별하게 즐기고 싶다면!</h1>
+            <p>오늘 롯데월드의 소식을 만나보세요.</p>
+          </div>
+          <div class="special-content">
+            <div class="special-left ltr wow">
+              <div class="item">
+                <div class="thum">
+                  <div class="photo">
+                    <img src="./images/special-01.png" alt="special-01">
+                  </div>
+                  <span>롯데호텔 월드 로티로리룸</span>
+                </div>
+                <div class="thum">
+                  <div class="photo">
+                    <img src="./images/special-02.jpg" alt="special-02">
+                  </div>
+                  <span>샤로캣 프리미엄 라운지</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="thum">
+                  <div class="photo">
+                    <img src="./images/special-03.jpg" alt="special-03">
+                  </div>
+                  <span>연간 이용안내</span>
+                </div>
+                <div class="thum">
+                  <div class="photo">
+                    <img src="./images/special-04.jpg" alt="special-04">
+                  </div>
+                  <span>롯데월듯 어드벤처 선물권</span>
+                </div>
+              </div>
+            </div>
+            <div class="special-right rtl wow">
+              <div class="news">
+                <h2>롯데월드 소식</h2>
+                <div class="news-content">
+                  <a href="#none">
+                    <span>어트랙션 3종 운영 종료 안내</span>
+                  </a>
+                  <em>2025.01.13</em>
+                </div>
+                <div class="news-content">
+                  <a href="#none">
+                    <span>월드 MBTI 이벤트 당첨자 안내</span>
+                  </a>
+                  <em>2024.12.27</em>
+                </div>
+                <div class="news-content">
+                  <a href="#none">
+                    <span>어트랙션 싱글라이더 제도 안내</span>
+                  </a>
+                  <em>2024.05.17</em>
+                </div>
+                <div class="news-content">
+                  <a href="#none">
+                    <span>어트랙션 탑승예약제 안내</span>
+                  </a>
+                  <em>2024.04.18</em>
+                </div>
+              </div>
+              <div class="app">
+                <h2>앱 다운로드로 더 스마트하게</h2>
+                <span>티켓 사전 예매</span>
+                <span>모바일 티켓 발권</span>
+                <span>깜짝 이벤트 쿠폰</span>
+                <span>레스토랑, 상품샵 위치 안내</span>
+                <span>공연시간 확인 및 알람 서비스</span>
+                <div class="app-btn">
+                  <button class="app-store"><i class="xi-apple"></i> App Store</button>
+                  <button class="google-play"><i class="xi-google-play"></i> Google play</button>
+                </div>
+                <img src="./images/app.png" alt="app">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <div class="footer-inner">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <img src="./images/footer-logo.png" alt="footer-logo">
+            </div>
+            <div class="info">
+              <h3>COMPANY INFORMATION</h3>
+              <span>주식회사 롯데월드</span>
+              <span>서울특별시 송파구 올림픽로 240</span>
+              <span>사업자등록번호 : 219-85-00014</span>
+              <span>통신판매업신고번호 : 송파 제5513호</span>
+              <span>대표이사 : 권오상</span>
+            </div>
+            <div class="sns-help">
+              <div class="sns">
+                <h3>SOCIAL</h3>
+                <a href="#none"><i class="xi-facebook-official"></i> Facebook</a>
+                <a href="#none"><i class="xi-instagram"></i> Instagram</a>
+                <a href="#none"><i class="xi-youtube-play"></i> Youtube</a>
+              </div>
+              <div class="help">
+                <h3>HELP</h3>
+                <span>고객센터 : 1661-2000</span>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <a href="#none">이용약관</a> <em>|</em>
+            <a href="#none">개인정보처리방침</a>
+            <span>COPYRIGHT 2018 LOTTEWORLD. ALL RIGHTS</span>
+          </div>
+        </div>
+      </footer>
+      <!-- Go To Top -->
+      <div class="top">
+        <a href="#"><i class="xi-angle-up"></i></a>
+      </div>
+    </div>
+  </body>
+</html>

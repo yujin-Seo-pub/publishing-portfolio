@@ -1,0 +1,282 @@
+@media (max-width: 768px) {
+  /* Default CSS */
+  section {
+    padding: 60px 10px;
+  }
+  /* Common CSS */
+  .headline-share h1 {
+    font-size: 28px;
+  }
+  .headline-share p {
+    font-size: 16px;
+  }
+  /* --------------------------- Header --------------------------- */
+  .header-inner {
+    width: 100%;
+  }
+  /* ---------------------- Section : Side Menu Modal --------------------- */
+  .modal {
+    width: 280px;
+  }
+  .modal.active {
+    right: -450px;
+  }
+  .modal-inner {
+    /* width: 100%; */
+    top: 10px;
+    left: 0;
+  }
+  .close-btn {
+    position: absolute;
+    top: 0px;
+    right: 280px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #333;
+    padding: 8px;
+  }
+  .modal-category {
+    width: 270px;
+    margin: 0 10px;
+  }
+  .modal-title h2 {
+    font-size: 20px;
+  }
+  .modal-item a {
+    font-size: 16px;
+  }
+  /* ---------------------- Section : welcome --------------------- */
+  .welcome {
+    padding-top: 120px;
+  }
+  .welcome-inner {
+    width: 100%;
+  }
+  .search {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .search:before {
+    left: 30px;
+  }
+  .main-category {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .main-left img,
+  .main-right img {
+    display: none;
+  }
+  .main-category li {
+    width: 45%;
+    height: 12%;
+  }
+  .main-category li img {
+    width: 50px;
+  }
+  .main-category li span {
+    font-size: 12px;
+  }
+  /* ---------------------- Section : benefit --------------------- */
+  .benefit-inner {
+    width: 100%;
+  }
+  .benefit-item {
+    width: 85%;
+    margin: 10px 0;
+  }
+  /* ---------------------- Section : ride --------------------- */
+  .ride-inner {
+    width: 100%;
+  }
+  .ride-content {
+    width: 100%;
+  }
+  .ride-btn a {
+    width: 29%;
+    margin: 0 3px 15px 3px;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .ride-item {
+    width: 45%;
+    margin: 5px;
+  }
+  .ride-item img {
+    width: 100%;
+  }
+  .item-content {
+    padding: 10px 5px;
+  }
+  .item-content h2 {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .item-content span {
+    font-size: 11px;
+  }
+  .item-btn {
+    padding-top: 20px;
+  }
+  .item-btn button {
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+  /* ---------------------- Section : parade --------------------- */
+  .parade-inner {
+    width: 100%;
+  }
+  .swiper {
+    margin-top: 10px;
+  }
+  .swiper-slide .desc {
+    top: 370px;
+  }
+  .swiper-slide .desc h2 {
+    font-size: 26px;
+  }
+  .swiper-slide .desc p {
+    height: 260px;
+    font-size: 18px;
+  }
+  .swiper-slide .desc a {
+    font-size: 28px;
+    padding-top: 28px;
+  }
+  .swiper-pagination {
+    position: absolute;
+    bottom: -50px;
+  }
+  .swiper-pagination-bullet {
+    background-color: #C5E1A5;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    opacity: 0.6;
+    transition: 0.5s;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #AED581;
+    width: 20px;
+    height: 13px;
+    opacity: 1;
+  }
+  /* ---------------------- Section : special --------------------- */
+  .special-inner {
+    width: 100%;
+  }
+  .special-content > div {
+    float: none;
+    width: 100%;
+  }
+  .special-left {
+    padding: 0;
+  }
+  .special-left .item .thum {
+    padding: 10px;
+  }
+  .special-left .item .thum .photo {
+    width: 100%;
+  }
+  .special-left .item .thum span {
+    display: inline-block;
+    width: 150px;
+    font-size: 18px;
+    line-height: 1.2em;
+  }
+  .special-right .news, 
+  .special-right .app {
+    padding: 0 20px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .special-right .news h2,
+  .special-right .app h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  .special-right .news-content {
+    padding-bottom: 10px;
+  }
+  .special-right .news-content:last-child {
+    padding-bottom: 20px;
+  }
+  .special-right .news-content span {
+    font-size: 16px;
+  }
+  .special-right .news-content em {
+    font-size: 10px;
+  }
+  .special-right .app span {
+    display: block;
+    padding: 5px 0;
+  }
+  .special-right .app img {
+    display: none;
+  }
+  .app-store,
+  .google-play {
+    padding: 10px 20px;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+  /* --------------------------- Footer --------------------------- */
+  footer {
+    background-color: #FFE4E1;
+    background-image: none;
+    padding-top: 50px;
+  }
+  .footer-inner {
+    width: 100%;
+  }
+  .footer-logo {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .info,
+  .sns-help {
+    width: 100%;
+    padding-left: 30px;
+    margin-bottom: 15px;
+  }
+  .sns-help {
+    overflow: hidden;
+  }
+  .sns-help > div {
+    float: left;
+  }
+  .sns {
+    width: 40%;
+  }
+  .help {
+    width: 60%;
+  }
+  .copyright {
+    width: 100%;
+    padding: 0 30px 40px 30px;
+    line-height: 1.5em;
+  }
+  .copyright span {
+    display: block;
+    margin: 0;
+  }
+  /* --------------------------- Go To Top --------------------------- */
+  .top {
+    position: fixed;
+    bottom: -80px;
+    right: 25px;
+    box-shadow: 0 0 10px #F08080;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    z-index: 10;
+    transition: 0.5s;
+  }
+}
