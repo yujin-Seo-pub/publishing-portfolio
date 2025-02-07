@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wide Slide</title>
+    <link rel="stylesheet" href="./wide_slide.css">
+    <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function(){
+        // 사진 클릭시 modal 생성 이벤트
+        $('.photo-box').click(function(){
+          var index = $(this).parent().index() + 1
+          $('#madal-0' + index).fadeIn()
+        })
+        // modal 닫기 버튼 이벤트
+        $('.close-btn').click(function(){
+          $('.modal').fadeOut()
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div class="tab-inner">
+      <input type="radio" name="tabmenu" id="tab1" checked>
+      <input type="radio" name="tabmenu" id="tab2">
+      <input type="radio" name="tabmenu" id="tab3">
+      <div class="tabs">
+        <div class="items">
+          <div class="content">
+            <div class="photo-box">
+              <h1>The Starry Night</h1>
+              <img src="./img/picture01.jpg">
+            </div>
+          </div>
+          <div class="content">
+            <div class="photo-box">
+              <h1>Île de la Grande Jatte</h1>
+              <img src="./img/picture02.jpg">
+            </div>
+          </div>
+          <div class="content">
+            <div class="photo-box">
+              <h1>Des glaneuses</h1>
+              <img src="./img/picture03.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn">
+        <label for="tab1"></label>
+        <label for="tab2"></label>
+        <label for="tab3"></label>
+      </div>
+    </div>
+    <div class="modal" id="madal-01">
+      <i class="close-btn xi-close-thin"></i>
+      <div class="modal-inner">
+        <h3>The Starry Night (1889)</h3>
+        <p>
+          One of Vincent van Gogh's most famous works, it was painted in 1889 at a nursing home in Saint-Rémy and is currently owned by the Museum of Modern Art in New York.
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="madal-02">
+      <i class="close-btn xi-close-thin"></i>
+      <div class="modal-inner">
+        <h3>A Sunday afternoon on the Île de la Grande Jatte (1886)</h3>
+        <p>
+          A Sunday afternoon on the Île de la Grande Jatte is a work by French neo-impressionist painter Georges Seurat. It is an oil painting on canvas and its size is 207х308cm. It was produced from 1884 to 1886 and is currently housed in the Art Institute of Chicago in the United States.
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="madal-03">
+      <i class="close-btn xi-close-thin"></i>
+      <div class="modal-inner">
+        <h3>Des glaneuses(1857)</h3>
+        <p>
+          This is an oil painting completed by Jean-François Millet in 1857. It is currently housed in the Musée d'Orsay in Paris, France.
+          This is an oil painting depicting three women gleaning grains from a wheat field after harvest.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

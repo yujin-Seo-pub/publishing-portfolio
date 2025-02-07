@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion FAQ</title>
+    <link rel="stylesheet" href="./accordion.css">
+    <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function(){
+        $('.item .title').click(function(){
+          $(this).next().stop().slideToggle()
+          $(this).toggleClass('active')
+        })
+      })
+    </script>
+  <body>
+    <div class="faq">
+      <div class="faq-inner">
+        <h1>자주 묻는 질문</h1>
+          <div class="accordion">
+            <div class="item">
+              <div class="title">뜨거운 떡이 봉지포장되어 오는거 같은데 괜찮은건가요?</div>
+              <div class="content">
+                <em>포장지(PP)</em> : 식품 포장지 가능 <em>잉크</em> : 식품인증받은 잉크사용
+                <span>식품 인증을 받은 잉크와 식품용 포장지(PP)를 사용하여 환경호르몬으로부터 <em>안전합니다.</em></span>
+              </div>
+            </div>
+          <div class="item">
+            <div class="title">아이스팩이 들어있나요?</div>
+            <div class="content">
+              아니요. 저희는 전제품 생산 후 <em>실온상태로 배송</em>하고 있습니다. 냉동 택배배송은 완벽한 냉동이 어려워 일부 녹은 제품을 재냉동하면 신선도가 떨어질 우려가 있어 실온으로 배송하고 있으며, <em>수령 즉시 냉동보관을 권장드립니다.</em>
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">실온에 두었더니 떡이 상했어요.</div>
+            <div class="content">
+              <em>방부제를 사용하지 않은 식품</em>은 실온에 보관시 변질됩니다. 모든 식품은 시간이 지나면 상해야 정상이고 상한다는 것은 방부제를 사용하지 않았다는 근거입니다.
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">떡이 굳었어요.</div>
+            <div class="content">
+              떡끼리 겹쳐 보관하게 될 경우 급랭이 되지 않아 해동 시 굳는 현상이 발생할 수 있습니다. 반드시 <em>소분하여 냉동보관</em> 부탁드리며, 보관 불찰로 인한 교환/환불은 불가합니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

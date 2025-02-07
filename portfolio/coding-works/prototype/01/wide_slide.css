@@ -1,0 +1,124 @@
+/* Font - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* XEicon */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+  margin: 0;
+  font-family: "Roboto", serif;
+}
+.tab-inner {}
+input[name=tabmenu] {
+  display: none;
+}
+.tabs {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.items {
+  width: 300%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.content {
+  width: 33.3333%;
+  float: left;
+  box-sizing: border-box;
+  height: 100vh;
+  position: relative;
+}
+.content:nth-child(1) {
+  background-color: rgb(74, 103, 126);
+}
+.content:nth-child(2) {
+  background-color: rgb(88, 105, 59);
+}
+.content:nth-child(3) {
+  background-color: rgb(109, 86, 61);
+}
+.content .photo-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  text-align: center;
+}
+.content .photo-box img {
+  width: 450px;
+  height: 300px;
+}
+.content h1 {
+  margin-top: 0;
+  font-size: 46px;
+  color: #222;
+}
+.content h1 span {
+  display: block;
+}
+.btn {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+.btn label {
+  display: inline-block;
+  width: 100px;
+  height: 8px;
+  background: #fff;
+  cursor: pointer;
+  margin: 3px;
+}
+input[id=tab1]:checked ~ .tabs .items {
+  left: 0;
+}
+input[id=tab2]:checked ~ .tabs .items {
+  left: -100%;
+}
+input[id=tab3]:checked ~ .tabs .items {
+  left: -200%;
+}
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3] {
+  background-color: #333;
+}
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00000070;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+.modal i {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  color: #000;
+  cursor: pointer;
+}
+.modal-inner{
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.modal-inner h3 {
+  font-size: 50px;
+}
+.modal-inner p {
+  font-size: 30px;
+  font-weight: 300;
+}

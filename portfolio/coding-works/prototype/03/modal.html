@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="./modal.css">
+    <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function(){
+        $('.open-modal').click(function(){
+          $('.modal').addClass('active')
+        })
+        $('.close-modal').click(function(){
+          $('.modal').removeClass('active')
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./img/gift.png">
+      <button class="open-modal">Open gift box</button>
+    </div>
+    <div class="modal">
+      <div class="modal-inner">
+        <a href="#none" class="close-modal">x</a>
+        <div class="photo">
+          <img src="./img/open_gift.png">
+        </div>
+        <div class="content">
+          <span>save up to <em>30%</em> off in your next order</span>
+        </div>
+        <a href="#none" class="get-it">GET IT</a>
+      </div>
+    </div>
+  </body>
+</html>

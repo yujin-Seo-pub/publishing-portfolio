@@ -1,0 +1,66 @@
+@import url('../../cdn.css');
+
+body {
+  margin: 0;
+  background-color: #7CB342;
+  font-family: "Noto Sans KR", serif;
+}
+.faq {
+  height: 100vh;
+}
+.faq-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+}
+.faq-inner h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.accordion {
+  min-height: 520px;
+}
+.item {
+  border-radius: 15px;
+  background-color: #fff;
+  margin-bottom: 16px;
+  overflow: hidden;
+  padding: 5px 10px;
+  box-shadow: 0 0 10px #00000020;
+}
+.item .title {
+  margin-bottom: 1px;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  position: relative;
+  padding: 10px;
+}
+.item .title.active:after {
+  transform: rotate(180deg);
+}
+.item .title:after {
+  content: '\f107';
+  font-family: fontawesome;
+  position: absolute;
+  right: 12px;
+  top: 15px;
+}
+.item .content {
+  font-size: 14px;
+  color: #333;
+  padding: 10px;
+  border-top: 1px solid #777;
+  display: none;
+}
+.item .content span {
+  display: block;
+}
+.item .content em {
+  font-weight: 600;
+  font-style: normal;
+}

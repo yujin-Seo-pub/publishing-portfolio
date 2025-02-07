@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+    <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function (){
+        $('.btn li').click(function(){
+          $(this).addClass('active')
+          $(this).siblings().removeClass('active')
+
+          var tab = $(this).attr('data-alt')
+          $('.content').removeClass('active')
+          $('#' + tab).addClass('active')
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="btn">
+        <li data-alt="tab1" class="active">Basic</li>
+        <li data-alt="tab2">E-mail</li>
+        <li data-alt="tab3">QR</li>
+      </ul>
+      <div class="tabs">
+        <div id="tab1" class="content active">
+          <h1>Basic Login</h1>
+          <div class="form-box">
+            <span>ID</span>
+            <input type="text" placeholder="Type your ID">
+          </div>
+          <div class="form-box">
+            <span>Password</span>
+            <input type="text" placeholder="Type your Password">
+          </div>
+          <label>
+            <input type="checkbox">Keep me logged in
+          </label>
+          <button>LOGIN</button>
+        </div>
+        <div id="tab2" class="content">
+          <h1>Email Login</h1>
+          <div class="form-box">
+            <span>Email</span>
+            <input type="text" placeholder="ex) suhyj@email.com">
+          </div>
+          <div class="form-box">
+            <span>Password</span>
+            <input type="text" placeholder="Type your Password">
+          </div>
+          <label>
+            <input type="checkbox">Keep me logged in
+          </label>
+          <button>LOGIN</button>
+        </div>
+        <div id="tab3" class="content">
+          <img src="./img/qr.png">
+          <p>
+          네트워크, 공용 PC라면 안전을 위해 QR코드로 로그인해주세요.
+          <em>(QR코드를 스캔하여 보이는 숫자 중 00를 선택하면 로그인 됩니다.)</em> 
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
