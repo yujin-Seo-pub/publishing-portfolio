@@ -1,0 +1,406 @@
+@media (max-width: 768px) {
+  /* Default CSS */
+  section {
+    padding: 50px 15px;
+  }
+
+  /* --------------------------- Header --------------------------- */
+  .gnb-inner,
+  .lnb-inner {
+    width: 100%;
+    margin-left: 20px;
+  }
+  .gnb-inner {
+    height: 70px;
+  }
+  .gnb-inner .logo img {
+    width: 150px;
+  }
+  .gnb-inner .util-menu {
+    position: fixed;
+    top: 0;
+    right: -160px;
+    background-color: #fff;
+    width: 150px;
+    height: 100vh;
+    z-index: 20;
+    padding-top: 70px;
+    transition: 0.5s;
+    box-shadow: -3px 0 3px #00000015;
+  }
+  .gnb-inner .util-menu.active {
+    right: 0;
+  }
+  .gnb-inner .util-menu a {
+    display: block;
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .lnb-inner {
+    height: 30px;
+  }
+  .lnb .mein-menu a {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .sub-menu-inner {
+    width: 100%;
+    padding: 20px 15px;
+  }
+  .sub-menu-item {
+    width: 65px;
+    float: left;
+  }
+  .sub-menu-item h2 {
+    font-size: 10px;
+    cursor: pointer;
+  }
+  .sub-menu-item a {
+    display: block;
+    color: #555;
+    line-height: 1.7em;
+    font-size: 9px;
+  }
+  /* Trigger */
+  .trigger {
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 26px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 30;
+  }
+  .trigger:before {
+    content: "\e91c";
+    font-family: xeicon;
+    color: #fff;
+  }
+  .trigger.active:before {
+    content: "\e921";
+    color: #222;
+  }
+  /* --------------------------- Section - welcome --------------------------- */
+  .welcome-desc {
+    width: 195px;
+    left: 45%;
+    top: 70%;
+  }
+  .welcome-desc span {
+    display: block;
+    font-size: 24px;
+  }
+  .welcome-desc em {
+    font-style: normal;
+    font-size: 16px;
+  }
+  .welcome-slide .swiper-button-prev:after,
+  .welcome-slide .swiper-button-next:after {
+    font-size: 20px;
+    color: #fff;
+  }
+  /* --------------------------- Section - best --------------------------- */
+  .best-inner {
+    width: 100%;
+  }
+  .best-headline span {
+    font-size: 16px;
+  }
+  .best-headline h2 {
+    font-size: 22px;
+  }
+  .best-btn {
+    padding: 10px 0;
+  }
+  .best-btn a {
+    width: 75px;
+    padding: 3px 10px;
+    margin: 0 5px;
+    font-size: 12px;
+  }
+  .best-tabs {
+    padding: 0;
+  }
+  .best-list {
+    padding: 0;
+  }
+  .best-item {
+    width: 160px;
+    margin: 5px 5px;
+  }
+  .best-item .item-desc {
+    padding: 10px 0;
+  }
+  .best-item .item-desc h3 {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  .best-item .item-desc em {
+    font-size: 12px;
+  }
+  .best-item .item-desc span {
+    margin: 0 6px;
+    font-size: 12px;
+  }
+  .best-item .item-desc s {
+    display: block;
+    font-size: 12px;
+    padding-top: 3px;
+  }
+  .more {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 7px 15px;
+  }
+  /* --------------------------- Section - banner --------------------------- */
+  .banner {
+    padding: 10px 0;
+  }
+  .banner-slide .banner-item {
+    height: 170px;
+  }
+  .banner-slide .banner-item:nth-child(1),
+  .banner-slide .banner-item:nth-child(2),
+  .banner-slide .banner-item:nth-child(3) {
+    background-position: center right 30px;
+    background-size: 100px;
+  }
+  .banner-slide .banner-item .banner-desc {
+    left: 8%;
+    width: 180px;
+  }
+  .banner-slide .banner-item .banner-desc h2 {
+    font-size: 14px;
+  }
+  .banner-slide .banner-item .banner-desc p {
+    font-size: 11px;
+  }
+  .banner-slide .banner-item .banner-desc button {
+    margin-top: 10px;
+    padding: 4px 7px;
+    font-size: 9px;
+  }
+  .banner-slide .swiper-button-prev {
+    left: 0px;
+  }
+  .banner-slide .swiper-button-next {
+    right: 0px;
+  }
+  .banner-slide .swiper-button-prev:after,
+  .banner-slide .swiper-button-next:after {
+    font-size: 20px;
+  }
+  /* --------------------------- Section - season --------------------------- */
+  .season-inner {
+    width: 100%;
+  }
+  .season-title {
+    display: block;
+  }
+  .season-headline span {
+    font-size: 16px;
+  }
+  .season-headline h2 {
+    font-size: 22px;
+  }
+  .season-btn {
+    padding-top: 10px;
+  }
+  .season-btn a {
+    font-size: 12px;
+    padding: 3px 10px;
+    margin-right: 3px;
+  }
+  .season-tabs {
+    height: 280px;
+  }
+  .season-list {
+    /* flex-direction: column; */
+  }
+  .left-photo {
+    flex: 1;
+  }
+  .left-photo img {
+    width: 100%;
+  }
+  .right-slide {
+    padding: 10px 10px;
+    flex: 1;
+  }
+  .season-swiper .swiper-wrapper {
+    width: 130px;
+  }
+  .info-box h3 {
+    font-size: 14px;
+  }
+  .info-box p {
+    font-size: 14px;
+  }
+  .info-box span {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 20px;
+  }
+  /* --------------------------- Section - influencer --------------------------- */
+  .influencer {
+    padding: 10px 15px;
+  }
+  .influencer-inner {
+    width: 100%;
+  }
+  .influencer-title {
+    flex-direction: column;
+    text-align: right;
+  }
+  .influencer-btn {
+    padding-top: 10px;
+    order: 1;
+  }
+  .influencer-btn a {
+    font-size: 12px;
+    padding: 3px 10px;
+    margin-right: 0;
+    margin-left: 3px;
+  }
+  .influencer-headline span {
+    font-size: 16px;
+  }
+  .influencer-headline h2 {
+    font-size: 22px;
+  }
+  .influencer-tabs {
+    height: 280px;
+  }
+  .influencer-list {
+    /* flex-direction: column; */
+  }
+  .right-photo img {
+    width: 100%;
+  }
+  .left-slide {
+    flex: 1;
+    padding: 10px 10px;
+  }
+  .influencer-swiper .swiper-wrapper {
+    width: 130px;
+  }
+  .info-box h3 {
+    font-size: 14px;
+  }
+  .info-box p {
+    font-size: 14px;
+  }
+  .info-box span {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 20px;
+  }
+  .influencer-list:last-child .info-box h3 {
+    font-size: 12px;
+  }
+  .influencer-list:last-child .info-box p {
+    font-size: 12px;
+  }
+  .right-photo {
+    flex: 1;
+  }
+  /* --------------------------- Section - quick-menu --------------------------- */
+  .quick-inner {
+    width: 100%;
+  }
+  .quick-item {
+    width: 110px;
+    height: 130px;
+  }
+  .quick-item:nth-child(2) {
+    margin: 0 3px;
+  }
+  .quick-item .front h2 {
+    font-size: 15px;
+  }
+  /* --------------------------- Section - video --------------------------- */
+  .video {
+    padding: 15px 15px;
+  }
+  .video-inner {
+    width: 100%;
+  }
+  .video-slide {
+    width: 100%;
+    height: 250px;
+  }
+  .video-slide .swiper-slide {
+    padding: 0 9%;
+  }
+  .video-slide::before,
+  .video-slide::after {
+    width: 10%;
+    height: 250px;
+  }
+  .video-slide .swiper-button-prev:after,
+  .video-slide .swiper-button-next:after {
+    font-size: 20px;
+  }
+  .video-slide .swiper-button-prev {
+    left: 0;
+  }
+  .video-slide .swiper-button-next {
+    right: 0;
+  }
+  /* --------------------------- Footer --------------------------- */
+  footer {
+    margin-top: 50px;
+    padding: 40px 15px;
+  }
+  .footer-inner {
+    width: 100%;
+  }
+  .footer-logo img {
+    width: 130px;
+  }
+  .footer-tab {
+    font-size: 10px;
+  }
+  .footer-tab em {
+    margin: 3px;
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .company-info span {
+    padding-bottom: 10px;
+    font-size: 10px;
+  }
+  .company-info p {
+    font-size: 10px;
+  }
+  .company-side .sns {
+    padding: 5px 0;
+  }
+  .company-side .sns a {
+    font-size: 16px;
+    margin-right: 3px;
+  }
+  .company-side .cs h3 {
+    font-size: 14px;
+  }
+  .company-side .cs h3 span:first-child {
+    font-size: 22px;
+  }
+  /* --------------------------- Go TO Top --------------------------- */
+  .top {
+    background-color: #999;
+    right: 15px;
+  }
+  .top.active {
+    bottom: 15px;
+    right: 15px;
+  }
+  .top a {
+    color: #fff;
+  }
+}

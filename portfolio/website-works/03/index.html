@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVERNAT</title>
+    <!-- Jquery -->
+    <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- TypeIt -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- custom CSS & JS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="./custom.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header -->
+      <header>
+        <div class="gnb">
+          <div class="gnb-inner">
+            <div class="logo">
+              <a href="#">
+                <img src="./image/logo.png" alt="logo">
+              </a>
+            </div>
+            <div class="util-menu">
+              <a href="#none">LOGIN / JOIN</a>
+              <a href="#none">MY PAGE</a>
+              <a href="#none">CART</a>
+              <a href="#none"><i class="xi-search"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="lnb">
+          <div class="lnb-inner">
+            <nav class="mein-menu">
+              <a href="#none" data-alt="man">MAN</a>
+              <a href="#none" data-alt="woman">WOMAN</a>
+              <a href="#none" data-alt="covernat">with COVERNAT</a>
+            </nav>
+          </div>
+        </div>
+        <div class="sub-menu">
+          <ul id="man" class="sub-menu-box">
+            <div class="sub-menu-inner">
+              <li class="sub-menu-item">
+                <h2>NEW IN</h2>
+              </li>
+              <li class="sub-menu-item">
+                <h2>SHOP</h2>
+                <a href="#none">View All</a>
+                <a href="#none">Outer</a>
+                <a href="#none">T-shirt</a>
+                <a href="#none">Shirt</a>
+                <a href="#none">Sweat</a>
+                <a href="#none">Knitwear</a>
+                <a href="#none">Pants</a>
+                <a href="#none">Bag</a>
+                <a href="#none">Cap</a>
+                <a href="#none">Shoes</a>
+                <a href="#none">Life</a>
+                <a href="#none">Acc</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>ESSENTIAL</h2>
+                <a href="#none">T-shirt</a>
+                <a href="#none">Sweatshirt</a>
+                <a href="#none">Hoodie</a>
+                <a href="#none">Pants</a>
+                <a href="#none">Cap</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>OUTLET</h2>
+                <a href="#none">View All</a>
+                <a href="#none">Outer</a>
+                <a href="#none">T-shirt</a>
+                <a href="#none">Shirt</a>
+                <a href="#none">Sweat</a>
+                <a href="#none">Knitwear</a>
+                <a href="#none">Pants</a>
+                <a href="#none">Bag</a>
+                <a href="#none">Cap</a>
+                <a href="#none">Shoes</a>
+                <a href="#none">Life</a>
+                <a href="#none">Acc</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>COLLECTION</h2>
+              </li>
+            </div>
+          </ul>
+          <ul id="woman" class="sub-menu-box">
+            <div class="sub-menu-inner">
+              <li class="sub-menu-item">
+                <h2>슈화 PICK</h2>
+              </li>
+              <li class="sub-menu-item">
+                <h2>NEW IN</h2>
+              </li>
+              <li class="sub-menu-item">
+                <h2>SHOP</h2>
+                <a href="#none">View All</a>
+                <a href="#none">Outer</a>
+                <a href="#none">Top</a>
+                <a href="#none">Sweat</a>
+                <a href="#none">Knitwear</a>
+                <a href="#none">One-piece</a>
+                <a href="#none">Pants</a>
+                <a href="#none">Shirt</a>
+                <a href="#none">Bag</a>
+                <a href="#none">Hat</a>
+                <a href="#none">Acc</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>ESSENTIAL</h2>
+                <a href="#none">T-shirt</a>
+                <a href="#none">Sweatshirt</a>
+                <a href="#none">Hoodie</a>
+                <a href="#none">Pants</a>
+                <a href="#none">Cap</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>OUTLET</h2>
+                <a href="#none">View All</a>
+                <a href="#none">Outer</a>
+                <a href="#none">Top</a>
+                <a href="#none">Sweat</a>
+                <a href="#none">Knitwear</a>
+                <a href="#none">One-piece</a>
+                <a href="#none">Pants</a>
+                <a href="#none">Shirt</a>
+                <a href="#none">Bag</a>
+                <a href="#none">Hat</a>
+                <a href="#none">Acc</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>COLLECTION</h2>
+              </li>
+            </div>
+          </ul>
+          <ul id="covernat" class="sub-menu-box">
+            <div class="sub-menu-inner">
+              <li class="sub-menu-item">
+                <h2>with INFLUENCER</h2>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="trigger"></div>
+      </header>
+      <!-- Section - welcome -->
+      <section class="welcome">
+        <div class="welcome-inner">
+          <div class="swiper welcome-slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide welcome-item">
+                <img src="./image/main-01.jpg" alt="main-01">
+                <div class="welcome-desc">
+                  <span>CITY LIFE JOURNEYS</span>
+                  <em id="type-1"></em>
+                </div>
+              </div>
+              <div class="swiper-slide welcome-item">
+                <img src="./image/main-02.jpg" alt="main-02">
+                <div class="welcome-desc">
+                  <span>VIBE WEAVE</span>
+                  <em id="type-2"></em>
+                </div>
+              </div>
+              <div class="swiper-slide welcome-item">
+                <img src="./image/main-03.jpg" alt="main-03">
+                <div class="welcome-desc">
+                  <span>WINTER LOOKBOOK</span>
+                  <em id="type-3"></em>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Section - best -->
+      <section class="best">
+        <div class="best-inner">
+          <div class="best-headline">
+            <span>BEST ITEM</span>
+            <h2>가장 인기많은 베스트 아이템</h2>
+          </div>
+          <div class="best-btn">
+            <a href="#none" data-text="best1" class="active">MAN</a>
+            <a href="#none" data-text="best2">WOMAN</a>
+          </div>
+          <div class="best-tabs">
+            <div id="best1" class="best-list active">
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/man/1-1.png" alt="">
+                  <img src="./image/best-item/man/1-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>RDS 아웃 포켓 미들 다운 차콜</h3>
+                  <em>43%</em><span>159,000원</span><s>279,000원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/man/2-1.png" alt="">
+                  <img src="./image/best-item/man/2-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>어센틱 와펜 하프 집업 니트 브라운</h3>
+                  <em>30%</em><span>83,300원</span><s>119,000원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/man/3-1.png" alt="">
+                  <img src="./image/best-item/man/3-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>RDS 컬리지 아치 숏 푸퍼 블랙</h3>
+                  <em>30%</em><span>167,300원</span><s>239,000원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/man/4-1.png" alt="">
+                  <img src="./image/best-item/man/4-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>빅 C 로고 크루넥 니트 그레이</h3>
+                  <em>40%</em><span>59,400원</span><s>99,000원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/man/5-1.png" alt="">
+                  <img src="./image/best-item/man/5-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>C 로고 후디 블랙</h3>
+                  <em>30%</em><span>55,300원</span><s>79,000원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/man/6-1.png" alt="">
+                  <img src="./image/best-item/man/6-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>카라 블루종 오트밀</h3>
+                  <em>42%</em><span>149,000원</span><s>259,000원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/man/7-1.png" alt="">
+                  <img src="./image/best-item/man/7-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>뉴 어센틱 백팩 27L 블랙</h3>
+                  <em>10%</em><span>107,100원</span><s>119,000원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/man/8-1.png" alt="">
+                  <img src="./image/best-item/man/8-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>RDS 씨빅 오리진 숏 푸퍼  그레이</h3>
+                  <em>30%</em><span>153,300원</span><s>219,000원</s>
+                </div>
+              </div>
+              <button class="more">더 많은 상품 보러가기</button>
+            </div>
+            <div id="best2" class="best-list">
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/woman/1-1.png" alt="">
+                  <img src="./image/best-item/woman/1-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>[슈화 착용] 노르딕 집업 니트 가디건</h3>
+                  <em>40%</em><span>95,400원</span><s>159,000원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/woman/2-1.png" alt="">
+                  <img src="./image/best-item/woman/2-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>클로버하트 플러피 토트백 아이보리</h3>
+                  <em>30%</em><span>41,300원</span><s>59,000원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/woman/3-1.png" alt="">
+                  <img src="./image/best-item/woman/3-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>RDS 우먼 씨빅 숏 푸퍼 라이트 핑크</h3>
+                  <em>40%</em><span>131,400원</span><s>219,400원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/woman/4-1.png" alt="">
+                  <img src="./image/best-item/woman/4-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>우먼 크롭 라운드 니트 가디건 그레이</h3>
+                  <em>30%</em><span>76,300원</span><s>109,000원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/woman/5-1.png" alt="">
+                  <img src="./image/best-item/woman/5-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>클로버하트 램스울 머플러 오트밀</h3>
+                  <em>30%</em><span>38,500원</span><s>55,000원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/woman/6-1.png" alt="">
+                  <img src="./image/best-item/woman/6-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>우먼 크롭 라운드 니트 가디건 네이비</h3>
+                  <em>30%</em><span>76,300원</span><s>109,000원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/woman/7-1.png" alt="">
+                  <img src="./image/best-item/woman/7-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>우먼 세미부츠컷 코듀로이 팬츠 브라운</h3>
+                  <em>40%</em><span>65,400원</span><s>109,000원</s>
+                </div>
+              </div>
+              <div class="best-item">
+                <div class="photo">
+                  <img src="./image/best-item/woman/8-1.png" alt="">
+                  <img src="./image/best-item/woman/8-2.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3>우먼 크롭 벨벳 후디 집업 블랙</h3>
+                  <em>40%</em><span>65,400원</span><s>109,000원</s>
+                </div>
+              </div>
+              <button class="more">더 많은 상품 보러가기</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section - banner -->
+      <section class="banner">
+        <div class="swiper banner-slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide banner-item">
+              <div class="banner-desc">
+                <h2>신규 가입 시<span>5% 할인 쿠폰 2개 증정</span></h2>
+                <p>1, 4, 7, 10월 1일에 지급후 30일 이내 사용 가능합니다.</p>
+                <button>가입하고 쿠폰 받기</button>
+              </div>
+            </div>
+            <div class="swiper-slide banner-item">
+              <div class="banner-desc">
+                <h2>생일 기념<span>1만원 쿠폰 발급</span></h2>
+                <p>-생일 당일에 발급됩니다.</p>
+                <p>-실 결제 금액의 50% 한도로 사용 가능합니다.</p>
+              </div>
+            </div>
+            <div class="swiper-slide banner-item">
+              <div class="banner-desc">
+                <h2>바로 사용 가능한<span>기프트 마일리지 1만원 적립</span></h2>
+                <p>회원가입 후 바로 지급되어 바로 사용 가능합니다.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <!-- Section - season -->
+      <section class="season">
+        <div class="season-inner">
+          <div class="season-title">
+            <div class="season-headline">
+              <span>SEASON PICK</span>
+              <h2>지금 시즌 가장 핫한 아이템</h2>
+            </div>
+            <div class="season-btn">
+              <a data-alt="season1" href="#none" class="active">방한용품</a>
+              <a data-alt="season2" href="#none">숏푸퍼</a>
+              <a data-alt="season3" href="#none">가방</a>
+            </div>
+          </div>
+          <div class="season-tabs">
+            <div id="season1" class="season-list active">
+              <div class="left-photo">
+                <img src="./image/season/season01/01.jpg" alt="">
+              </div>
+              <div class="right-slide">
+                <div class="swiper season-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season01/01-1.jpg" alt="">
+                        <img class="back" src="./image/season/season01/01-2.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>클로버하트 램스울 비니</h3>
+                        <p>27,300원</p>
+                        <span style="background-color: #8B0000;"></span>
+                        <span style="background-color: #000;"></span>
+                        <span style="background-color: #FAEBD7;"></span>
+                        <span style="background-color: #A9A9A9;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season01/01-3.jpg" alt="">
+                        <img class="back" src="./image/season/season01/01-4.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>클로버하트 램스울 장갑</h3>
+                        <p>31,500원</p>
+                        <span style="background-color: #8B0000;"></span>
+                        <span style="background-color: #000;"></span>
+                        <span style="background-color: #FAEBD7;"></span>
+                        <span style="background-color: #A9A9A9;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season01/01-5.jpg" alt="">
+                        <img class="back" src="./image/season/season01/01-6.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>클로버하트 램스울 머플러</h3>
+                        <p>38,500원</p>
+                        <span style="background-color: #8B0000;"></span>
+                        <span style="background-color: #000;"></span>
+                        <span style="background-color: #FAEBD7;"></span>
+                        <span style="background-color: #A9A9A9;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season01/01-7.jpg" alt="">
+                        <img class="back" src="./image/season/season01/01-8.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>클로버하트 바라클라바</h3>
+                        <p>41,300원</p>
+                        <span style="background-color: #D2B48C;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season01/01-9.jpg" alt="">
+                        <img class="back" src="./image/season/season01/01-10.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>클로버하트 장갑</h3>
+                        <p>29,400원</p>
+                        <span style="background-color: #D2B48C;"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+            <div id="season2" class="season-list">
+              <div class="left-photo">
+                <img src="./image/season/season02/02.jpg" alt="">
+              </div>
+              <div class="right-slide">
+                <div class="swiper season-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season02/02-1.jpg" alt="">
+                        <img class="back" src="./image/season/season02/02-2.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>RDS 우먼 씨빅 숏 푸퍼 세이지 그린</h3>
+                        <p>58,000원</p>
+                        <span style="background-color: #C5E1A5;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season02/02-3.jpg" alt="">
+                        <img class="back" src="./image/season/season02/02-4.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>RDS 우먼 씨빅 숏 푸퍼 라이트 핑크</h3>
+                        <p>58,000원</p>
+                        <span style="background-color: #F8BBD0;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season02/02-5.jpg" alt="">
+                        <img class="back" src="./image/season/season02/02-6.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>RDS 우먼 씨빅 숏 푸퍼 블랙랙</h3>
+                        <p>58,000원</p>
+                        <span style="background-color: #000;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season02/02-7.jpg" alt="">
+                        <img class="back" src="./image/season/season02/02-8.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>RDS 우먼 씨빅 글로시 숏 푸퍼 그레이</h3>
+                        <p>58,000원</p>
+                        <span style="background-color: #CFD8DC;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season02/02-9.jpg" alt="">
+                        <img class="back" src="./image/season/season02/02-10.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>RDS 우먼 씨빅 글로시 숏 푸퍼 블랙</h3>
+                        <p>58,000원</p>
+                        <span style="background-color: #424242;"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+            <div id="season3" class="season-list">
+              <div class="left-photo">
+                <img src="./image/season/season03/03.jpg" alt="">
+              </div>
+              <div class="right-slide">
+                <div class="swiper season-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season03/03-1.jpg" alt="">
+                        <img class="back" src="./image/season/season03/03-2.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>클로버하트 플러피 버캣백</h3>
+                        <p>55,300원</p>
+                        <span style="background-color: #FAFAFA;"></span>
+                        <span style="background-color: #D2B48C;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season03/03-3.jpg" alt="">
+                        <img class="back" src="./image/season/season03/03-4.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>클로버하트 플러피 도트백</h3>
+                        <p>41,300원</p>
+                        <span style="background-color: #FAFAFA;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season03/03-5.jpg" alt="">
+                        <img class="back" src="./image/season/season03/03-6.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>클로버하트 플러피 미디움 토트백</h3>
+                        <p>55,300원</p>
+                        <span style="background-color: #FAFAFA;"></span>
+                        <span style="background-color: #D2B48C;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/season/season03/03-7.jpg" alt="">
+                        <img class="back" src="./image/season/season03/03-8.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>클로버하트 플러피 백팩 베이지</h3>
+                        <p>69,300원</p>
+                        <span style="background-color: #D2B48C;"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section - influencer -->
+      <section class="influencer">
+        <div class="influencer-inner">
+          <div class="influencer-title">
+            <div class="influencer-btn">
+              <a data-alt="influencer1" href="#none" class="active">MAN</a>
+              <a data-alt="influencer2" href="#none">WOMAN</a>
+              <a data-alt="influencer3" href="#none">커버낫 X MAMA</a>
+            </div>
+            <div class="influencer-headline">
+              <span>INFLUENCER PICK</span>
+              <h2>인플루언서가 뽑은 아이템</h2>
+            </div>
+          </div>
+          <div class="influencer-tabs">
+            <div id="influencer1" class="influencer-list active">
+              <div class="left-slide">
+                <div class="swiper influencer-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer01/01-1.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer01/01-2.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>RDS 컬리지 볼륨 후디 다운</h3>
+                        <p>149,000원</p>
+                        <span style="background-color: #000;"></span>
+                        <span style="background-color: #F08080;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer01/01-3.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer01/01-4.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>컬리지 C 울 바시티</h3>
+                        <p>199,000원</p>
+                        <span style="background-color: #000;"></span>
+                        <span style="background-color: #000080;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer01/01-5.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer01/01-6.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>코지 울 블렌드 발마칸 코트</h3>
+                        <p>209,400원</p>
+                        <span style="background-color: #808080;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer01/01-7.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer01/01-8.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>미들 C 로고 크루넥 니트</h3>
+                        <p>69,300원</p>
+                        <span style="background-color: #000;"></span>
+                        <span style="background-color: #FFFACD;"></span>
+                        <span style="background-color: #808080;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer01/01-9.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer01/01-10.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>부클 저지 원턱 세미와이드핏 카고 팬츠</h3>
+                        <p>76,300원</p>
+                        <span style="background-color: #808000;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer01/01-11.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer01/01-12.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>세미와이드핏 카펜터 데님 팬츠</h3>
+                        <p>76,300원</p>
+                        <span style="background-color: #000;"></span>
+                        <span style="background-color: #000080;"></span>
+                        <span style="background-color: #87CEEB;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer01/01-13.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer01/01-14.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>세미와이드핏 워크 팬츠</h3>
+                        <p>71,400원</p>
+                        <span style="background-color: #DEB887;"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+              <div class="right-photo">
+                <img src="./image/influencer/influencer01/01.png" alt="">
+              </div>
+            </div>
+            <div id="influencer2" class="influencer-list">
+              <div class="left-slide">
+                <div class="swiper influencer-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer02/02-1.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer02/02-2.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>RDS 우먼 후드 스카프 롱 다운 코트</h3>
+                        <p>230,300원</p>
+                        <span style="background-color: #000;"></span>
+                        <span style="background-color: #FFFACD;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer02/02-3.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer02/02-4.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>우먼 부클 하프 코트</h3>
+                        <p>215,400원</p>
+                        <span style="background-color: #FAFAFA;"></span>
+                        <span style="background-color: #DAA520;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer02/02-5.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer02/02-6.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>우먼 롱 더블 코트</h3>
+                        <p>237,300원</p>
+                        <span style="background-color: #000080;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer02/02-7.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer02/02-8.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>우먼 셔링 셔츠 미니 원피스</h3>
+                        <p>95,400원</p>
+                        <span style="background-color: #000;"></span>
+                        <span style="background-color: #FAFAFA;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer02/02-9.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer02/02-10.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>클로버하트 앙고라 머플러</h3>
+                        <p>27,000원</p>
+                        <span style="background-color: #000;"></span>
+                        <span style="background-color: #FAFAFA;"></span>
+                        <span style="background-color: #F08080;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer02/02-11.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer02/02-12.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>우먼 쿠퍼 로고 맨투맨</h3>
+                        <p>45,500원</p>
+                        <span style="background-color: #000;"></span>
+                        <span style="background-color: #A0522D;"></span>
+                        <span style="background-color: #FAFAFA;"></span>
+                        <span style="background-color: #C5E1A5;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer02/02-13.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer02/02-14.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>우먼 쿠퍼 로고 니트</h3>
+                        <p>76,300원</p>
+                        <span style="background-color: #808000;"></span>
+                        <span style="background-color: #FAFAFA;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer02/02-15.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer02/02-16.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>우먼 니트 미니 스커트 </h3>
+                        <p>59,400원</p>
+                        <span style="background-color: #424242;"></span>
+                        <span style="background-color: #A0522D;"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+              <div class="right-photo">
+                <img src="./image/influencer/influencer02/02.jpg" alt="">
+              </div>
+            </div>
+            <div id="influencer3" class="influencer-list">
+              <div class="left-slide">
+                <div class="swiper influencer-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer03/03-1.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer03/03-2.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>[커버낫 X 2024 MAMA AWARDS] 그래픽 자수 볼캡 아이보리</h3>
+                        <p>49,000원</p>
+                        <span style="background-color: #FAFAFA;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer03/03-3.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer03/03-4.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>[커버낫 X 2024 MAMA AWARDS] 그래픽 맨투맨 헤더 그레이</h3>
+                        <p>89,000원</p>
+                        <span style="background-color: #999;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer03/03-5.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer03/03-6.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>[커버낫 X 2024 MAMA AWARDS] 그래픽 맨투맨 헤더 블랙</h3>
+                        <p>89,000원</p>
+                        <span style="background-color: #000;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer03/03-7.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer03/03-8.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>[커버낫 X 2024 MAMA AWARDS] 그래픽 후디 헤더 그레이</h3>
+                        <p>99,000원</p>
+                        <span style="background-color: #999;"></span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="photo-box">
+                        <img class="front" src="./image/influencer/influencer03/03-9.jpg" alt="">
+                        <img class="back" src="./image/influencer/influencer03/03-10.jpg" alt="">
+                      </div>
+                      <div class="info-box">
+                        <h3>[커버낫 X 2024 MAMA AWARDS] 그래픽 후디 헤더 블랙</h3>
+                        <p>99,000원</p>
+                        <span style="background-color: #000;"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+              <div class="right-photo">
+                <img src="./image/influencer/influencer03/03.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section - quick-menu -->
+      <section class="quick-menu">
+        <div class="quick-inner">
+          <div class="quick-item">
+            <img class="back" src="./image/quick01.png" alt="">
+            <div class="front">
+              <h2>CITY LIFE<span>JOURNEYS</span></h2>
+            </div>
+          </div>
+          <div class="quick-item">
+            <img class="back" src="./image/quick02.png" alt="">
+            <div class="front">
+              <h2>VIBE<span>WEAVE</span></h2>
+            </div>
+          </div>
+          <div class="quick-item">
+            <img class="back" src="./image/quick03.png" alt="">
+            <div class="front">
+              <h2>COVERNAT<span>WOMAN & EASTPAK</span></h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section - video -->
+      <section class="video">
+        <div class="video-inner">
+          <div class="swiper video-slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <iframe 
+                width="100%" height="100%" 
+                src="https://www.youtube.com/embed/y4l_ouC7f90?si=TTBFBPAzjksydsJ-" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>
+              </div>
+              <div class="swiper-slide">
+                <iframe width="100%" height="100%" 
+                src="https://www.youtube.com/embed/jyRwz4TzbhI?si=xRQlnlU5YA9-HPQV" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>
+              </div>
+              <div class="swiper-slide">
+                <iframe width="100%" height="100%" 
+                src="https://www.youtube.com/embed/0bs5VcyYR-o?si=BX8CXZgJVHKcVICE" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <div class="footer-inner">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="./image/logo.png" alt="footer-logo">
+            </div>
+            <div class="footer-tab">
+              <a href="#none">ABOUT</a><em>|</em>
+              <a href="#none">공지사항</a><em>|</em>
+              <a href="#none">매장안내</a><em>|</em>
+              <a href="#none">대리점 개설문의</a><em>|</em>
+              <a href="#none">이용약관</a><em>|</em>
+              <a href="#none">개인정보처리방침</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="company-info">
+              <span>서울특별시 마포구 잔다리로 24 (주)주식회사 비케이브 / 대표이사 : 윤형석</span>
+              <span>사업자등록번호 : 261-81-17293 / 통신판매업신고 : 제2020-서울마포-4143호</span>
+              <span>TEL : 1551-6613 / Mail : privacy@bcave.co.kr</span>
+              <p>Copyright 2019.ⓒ B.Cave. ALL Rights Reserved.</p>
+            </div>
+            <div class="company-side">
+              <div class="sns">
+                <a href="#none"><i class="xi-instagram"></i></a>
+                <a href="#none"><i class="xi-facebook"></i></a>
+                <a href="#none"><i class="xi-blogger"></i></a>
+                <a href="#none"><i class="xi-kakaotalk"></i></a>
+                <a href="#none"><i class="xi-youtube-play"></i></a>
+              </div>
+              <div class="cs">
+                <h3>
+                  CS Center 
+                  <span>1551-6613 (유료)</span>
+                  <span>09:30 ~ 18:00(주말/공휴일 휴무)</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Go To Top -->
+      <div class="top">
+        <a href="#"><i class="xi-arrow-top"></i></a>
+      </div>
+    </main>
+  </body>
+</html>
