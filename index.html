@@ -28,7 +28,6 @@
           </div>
           <nav>
             <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
             <a href="#skill">SKILL</a>
             <a href="#practical">PRACTICAL PUBLISHING</a>
             <a href="#web">WEB PUBLISHING</a>
@@ -43,14 +42,11 @@
             <h2>Seo Yu Jin</h2>
             <p>
               안녕하세요 웹퍼블리셔 서유진입니다. <br />
-              웹퍼블리싱이라는 새로운 분야에 도전하게 되어 꾸준히 성장하고
-              있습니다. <br />
-              꼼꼼하고 세심한 작업으로 사용자의 불편함을 최소화할 수 있는
-              결과물을 지향하며, <br />
-              그 과정에서 디자이너, 개발자와 함께 프로젝트를 성공적으로 마무리
-              할 수 있게 제 역할을 다하겠습니다. <br />
-              프로젝트를 진행하면서도 웹퍼블리셔로서 성장하기 위해 계속해서
-              노력할 것을 약속드립니다.
+              웹퍼블리싱이라는 새로운 분야에 도전하게 되어 꾸준히 성장하고 있습니다. <br />
+              꼼꼼하고 세심한 작업으로 유지보수에 적합한 시멘틱 마크업을 하기위해 노력하고 <br />
+              사용자의 불편함을 최소화할 수 있는 결과물을 지향하며, <br />
+              그 과정에서 다양한 위치의 팀원들을 존중하면서 원활한 협업이 될 수 있게 제 역할을 다하겠습니다. <br />
+              업무를 하면서도 웹퍼블리셔로서 성장하기 위해 계속해서 노력할 것을 약속드립니다.
             </p>
           </div>
           <div class="home-text"></div>
@@ -60,15 +56,6 @@
           <div class="home-deco">
             <img src="/images/deco.png" alt="" />
           </div>
-        </div>
-      </section>
-      <!-- section - about -->
-      <section id="about" class="about">
-        <div class="section-inner">
-          <div class="section-title">
-            <h1>About</h1>
-          </div>
-          <div class="about-content"></div>
         </div>
       </section>
       <!-- section - skill -->
@@ -291,61 +278,156 @@
             <h1>Web Publising</h1>
           </div>
           <div class="web-content">
-            <span class="prev"><i class="xi-angle-left-thin"></i></span>
-            <span class="next"><i class="xi-angle-right-thin"></i></span>
-            <input type="radio" name="tabmenu" id="web1" checked>
-            <input type="radio" name="tabmenu" id="web2">
-            <input type="radio" name="tabmenu" id="web3">
+            <input type="radio" name="tabmenu" id="web1" checked />
+            <input type="radio" name="tabmenu" id="web2" />
+            <input type="radio" name="tabmenu" id="web3" />
             <div class="web-btn">
-              <label for="web1"></label>
-              <label for="web2"></label>
-              <label for="web3"></label>
+              <label for="web1">LUSH COMPANY</label>
+              <label for="web2">LOTTEWORD</label>
+              <label for="web3">COVERNAT</label>
             </div>
             <div class="web-list">
               <div class="web-item">
-                <img src="/images/web-publishing/01/mockup011.png" alt="">
-                <h2>LUSH 회사소개</h2>
-                <div class="web-desc">
-                  <span>작업 기간<em>|</em>2025.01.06 ~ 2025.01.12</span>
-                  <span>작업 참여도<em>|</em>100%</span>
-                  <span>제작 방식<em>|</em>HTML + CSS + JQUERY + Wow.js + TypeIt.js</span>
+                <div class="mockup">
+                  <img src="/images/web-publishing/01/mockup01.png" alt="" />
                 </div>
-                <div class="open-btn" uk-lightbox>
-                  <a class="uk-button uk-button-default" href="/portfolio/website-works/01/index.html">OPEN WEB</a>
-                  <a class="uk-button uk-button-default" href="/portfolio/website-works/01/mobile-index.html">OPEN MOBILE</a>
-              </div>
+                <div class="mockup-desc">
+                  <div class="web-desc">
+                    <h2>LUSH 회사소개</h2>
+                      <span>작업 기간<em>|</em>2025.01.06 ~ 2025.01.12</span>
+                      <span>작업 참여도<em>|</em>100%</span>
+                      <span>제작 방식<em>|</em>HTML + CSS + JQUERY + Slick.js + Wow.js + TypeIt.js</span>
+                    </div>
+                    <div class="modal-btn">
+                      <a class="uk-button uk-button-default" href="#lush-full-w" uk-toggle>WEB OPEN</a>
+                      <a class="uk-button uk-button-default" href="#lush-full-m" uk-toggle>MOBILE OPEN</a>
+                      <div id="lush-full-w" class="uk-modal-full" uk-modal>
+                          <div class="uk-modal-dialog">
+                              <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                              <div class="uk-grid-collapse uk-child-width-1-1@s uk-flex-middle" uk-grid>
+                                <iframe 
+                                  src="./portfolio/website-works/01/index.html" 
+                                  frameborder="0" 
+                                  uk-height-viewport
+                                ></iframe>
+                              </div>
+                          </div>
+                      </div>
+                      <div id="lush-full-m" class="uk-modal-full" uk-modal>
+                          <div class="uk-modal-dialog">
+                              <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                              <div class="uk-grid-collapse uk-child-width-1-1@s uk-flex-middle" uk-grid>
+                                <iframe 
+                                  src="./portfolio/website-works/01/mobile-index.html" 
+                                  frameborder="0" 
+                                  uk-height-viewport
+                                ></iframe>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
               </div>
               <div class="web-item">
-                <img src="/images/web-publishing/02/mockup022.png" alt="">
-                <h2>롯데월드</h2>
-                <div class="web-desc">
-                  <span>작업 기간<em>|</em>2025.01.13 ~ 2025.01.20</span>
-                  <span>작업 참여도<em>|</em>100%</span>
-                  <span>제작 방식<em>|</em>HTML + CSS + JQUERY + Swiper.js + Wow.js</span>
+                <div class="mockup">
+                  <img src="/images/web-publishing/02/mockup02.png" alt="" />
                 </div>
-                <div class="open-btn" uk-lightbox>
-                  <a class="uk-button uk-button-default" href="/portfolio/website-works/02/index.html">OPEN WEB</a>
-                  <a class="uk-button uk-button-default" href="/portfolio/website-works/02/mobile-index.html">OPEN MOBILE</a>
-              </div>
+                <div class="mockup-desc">
+                  <div class="web-desc">
+                    <h2>롯데월드</h2>
+                      <span>작업 기간<em>|</em>2025.01.13 ~ 2025.01.20</span>
+                      <span>작업 참여도<em>|</em>100%</span>
+                      <span>제작 방식<em>|</em>HTML + CSS + JQUERY + Swiper.js + Wow.js</span>
+                    </div>
+                    <div class="modal-btn">
+                      <a class="uk-button uk-button-default" href="#lotte-full-w" uk-toggle>WEB OPEN</a>
+                      <a class="uk-button uk-button-default" href="#lotte-full-m" uk-toggle>MOBILE OPEN</a>
+                      <div id="lotte-full-w" class="uk-modal-full" uk-modal>
+                          <div class="uk-modal-dialog">
+                              <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                              <div class="uk-grid-collapse uk-child-width-1-1@s uk-flex-middle" uk-grid>
+                                <iframe 
+                                  src="./portfolio/website-works/02/index.html" 
+                                  frameborder="0" 
+                                  uk-height-viewport
+                                ></iframe>
+                              </div>
+                          </div>
+                      </div>
+                      <div id="lotte-full-m" class="uk-modal-full" uk-modal>
+                          <div class="uk-modal-dialog">
+                              <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                              <div class="uk-grid-collapse uk-child-width-1-1@s uk-flex-middle" uk-grid>
+                                <iframe 
+                                  src="./portfolio/website-works/02/mobile-index.html" 
+                                  frameborder="0" 
+                                  uk-height-viewport
+                                ></iframe>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
               </div>
               <div class="web-item">
-                <img src="/images/web-publishing/03/mockup033.png" alt="">
-                <h2>COVERNAT 쇼핑몰</h2>
-                <div class="web-desc">
-                  <span>작업 기간<em>|</em>2025.01.22 ~ 2025.01.31</span>
-                  <span>작업 참여도<em>|</em>100%</span>
-                  <span>제작 방식<em>|</em>HTML + CSS(flex) + JQUERY + Swiper.js+ TypeIt.js</span>
+                <div class="mockup">
+                  <img src="/images/web-publishing/03/mockup03.png" alt="" />
                 </div>
-                <div class="open-btn" uk-lightbox>
-                  <a class="uk-button uk-button-default" href="/portfolio/website-works/03/index.html">OPEN WEB</a>
-                  <a class="uk-button uk-button-default" href="/portfolio/website-works/03/mobile-index.html">OPEN MOBILE</a>
-              </div>
+                <div class="mockup-desc">
+                  <div class="web-desc">
+                    <h2>COVERNAT 쇼핑몰</h2>
+                      <span>작업 기간<em>|</em>2025.01.22 ~ 2025.01.31</span>
+                      <span>작업 참여도<em>|</em>100%</span>
+                      <span>제작 방식<em>|</em>HTML + CSS(flex) + JQUERY + Swiper.js + TypeIt.js</span>
+                    </div>
+                    <div class="modal-btn">
+                      <a class="uk-button uk-button-default" href="#covernat-full-w" uk-toggle>WEB OPEN</a>
+                      <a class="uk-button uk-button-default" href="#covernat-full-m" uk-toggle>MOBILE OPEN</a>
+                      <div id="covernat-full-w" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-1@s uk-flex-middle" uk-grid>
+                              <iframe 
+                              src="./portfolio/website-works/03/index.html" 
+                              frameborder="0" 
+                              uk-height-viewport
+                              ></iframe>
+                            </div>
+                        </div>
+                      </div>
+                      <div id="covernat-full-m" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-1@s uk-flex-middle" uk-grid>
+                              <iframe 
+                              src="./portfolio/website-works/03/mobile-index.html" 
+                              frameborder="0" 
+                              uk-height-viewport
+                              ></iframe>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- section - epilogue -->
+      <!-- Footer -->
+      <footer>
+        <div class="github-info">
+          <span>저의 포트폴리오를 읽어주셔서 감사합니다.</span>
+          <h1>포트폴리오 소스가 궁금하시다면</h1>
+          <a href="https://github.com/yujin-Seo-pub/publishing-portfolio" target="_blank"><i class="fa fa-hand-o-right"></i> GITHUB 바로가기 <i class="fa fa-hand-o-left"></i></a>
+        </div>
+      </footer>
+      <!-- Go To Top -->
+      <div class="top">
+        <a href="#">
+          <span>TOP<i class="fa fa-angle-up"></i></span>
+        </a>
+      </div>
     </main>
   </body>
 </html>
