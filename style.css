@@ -25,6 +25,7 @@
   --color-bright-yarrow: #fdcb6e; /* 헤더엑티브 */
   --color-amber: #fff8e1; /* 홈 배경색 */
   --font-color-gray: rgb(102, 102, 102); /* 홈 p태그 */
+  --color-lime: #9e9d24;
 }
 .section-inner {
   width: var(--inner-width);
@@ -143,21 +144,14 @@ nav a:hover:before {
 }
 /* -------------------- Section - home -------------------- */
 .home {
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 120px;
   background-color: var(--color-amber);
-  /* background: var(--color-amber) url(/images/deco.png) no-repeat;
-  background-size: 250px;
-  background-position: right 50px bottom 50px; */
-  /* background: var(--color-amber) url(/images/flower.png) no-repeat;
-  background-size: 200px;
-  background-position: right 50px bottom 50px; */
 }
 .home-wrap {
   /* height: 530px; 노트북 */
-  height: 570px;
+  height: 590px;
   position: relative;
-
 }
 .home-wrap > div {
   border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
@@ -166,7 +160,7 @@ nav a:hover:before {
   border: 2px solid goldenrod;
   width: 80%;
   height: inherit;
-  padding: 120px 80px 80px 125px;
+  padding: 110px 80px 80px 150px;
   margin: 0 40px;
   color: var(--font-color-gray);
   position: absolute;
@@ -215,11 +209,6 @@ nav a:hover:before {
 }
 .home-deco img {
   width: 250px;
-}
-/* -------------------- Section - about -------------------- */
-.about {}
-.about-content {
-  height: 500px;
 }
 /* -------------------- Section - skill -------------------- */
 .skill {
@@ -303,9 +292,6 @@ nav a:hover:before {
   z-index: -1;
   transition: 0.5s;
 }
-.tab-btn a:hover:before {
-  width: 100%;
-}
 .tab-btn a.active:before {
   width: 100%;
 }
@@ -327,7 +313,7 @@ nav a:hover:before {
   height: 180px;
   border: 1px solid #ddd;
 }
-.uk-icon uk-slidenav-next uk-slidenav {
+.uk-icon svg {
   color: #fff;
 }
 /* -------------------- Section - web-pub -------------------- */
@@ -338,55 +324,58 @@ nav a:hover:before {
   display: none;
 }
 .web-content {
-  position: relative;
-  text-align: center;
   padding: 10px 0;
-}
-.web-content .prev,
-.web-content .next {
-  position: absolute;
-  font-size: 50px;
-  color: var(--font-color-gray);
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-.web-content .prev {
-  left: 0;
-}
-.web-content .next {
-  right: 0;
+  text-align: center;
 }
 .web-btn {
-  position: absolute;
-  top: 100%;
-  width: 100%;
+  padding-bottom: 25px;
 }
 .web-btn label {
-  display: inline-block;
-  background-color: var(--color-highlight);
-  width: 20px;
-  height: 20px;
-  margin: 5px;
-  border-radius: 50%;
+  margin: 20px;
+  font-size: 20px;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
-.web-list {}
+.web-btn label:before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-highlight);
+  width: 0;
+  height: 12px;
+  bottom: -1px;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.web-list {
+  /* text-align: center; */
+}
 .web-item {
   display: none;
+  overflow: hidden;
 }
-.web-item img {
-  width: 700px;
+.web-item > div {
+  float: left;
 }
-.web-item h2 {
+.mockup {
+  width: 60%;
+  padding-left: 80px;
+}
+.mockup img {
+  width: 620px;
+}
+.mockup-desc {
+  text-align: left;
+}
+.web-desc {
+  margin-bottom: 5px;
+  padding-top: 110px;
+}
+.web-desc h2 {
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 10px;
-}
-.web-desc {
-  display: inline-block;
-  text-align-last: left;
-  margin-bottom: 5px;
 }
 .web-desc span {
   display: block;
@@ -394,19 +383,127 @@ nav a:hover:before {
 }
 .web-desc span em {
   margin: 8px;
+  color: var(--color-bright-yarrow);
 }
-.open-btn a {
+.modal-btn {}
+.modal-btn a {
   margin: 10px;
   border: 1px solid var(--font-color-gray);
 }
-.web-pub input[id=web1]:checked ~ .web-btn label[for=web1],
-.web-pub input[id=web2]:checked ~ .web-btn label[for=web2],
-.web-pub input[id=web3]:checked ~ .web-btn label[for=web3] {
-  background-color: var(--color-bright-yarrow);
+.web-pub input[id=web1]:checked ~ .web-btn label[for=web1]::before,
+.web-pub input[id=web2]:checked ~ .web-btn label[for=web2]::before,
+.web-pub input[id=web3]:checked ~ .web-btn label[for=web3]::before {
+  width: 100%;
 }
 .web-pub input[id=web1]:checked ~ .web-list .web-item:nth-child(1),
 .web-pub input[id=web2]:checked ~ .web-list .web-item:nth-child(2),
 .web-pub input[id=web3]:checked ~ .web-list .web-item:nth-child(3) {
   display: block;
 }
-/* -------------------- Section - epilogue -------------------- */
+.uk-modal-dialog button {
+  background-color: #0000001c;
+  border-radius: 10px;
+  top: 10px;
+  right: 30px;
+}
+.uk-modal-dialog button svg {
+  color: #555;
+}
+/* -------------------- Footer -------------------- */
+footer {
+  height: 400px;
+  background: var(--color-bright-yarrow);
+  opacity: 0.9;
+  position: relative;
+  overflow: hidden;
+}
+.github-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.github-info span {
+  font-size: 26px;
+}
+.github-info h1 {
+  font-weight: bold;
+  position: relative;
+  margin: 16px;
+  font-size: 40px;
+}
+.github-info a {
+  font-size: 22px;
+  position: relative;
+  z-index: 1;
+}
+.github-info a:before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-highlight);
+  width: 0;
+  height: 14px;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  transition: 0.5s;
+}
+.github-info a:hover:before {
+  width: 190px;
+}
+.github-info a .fa {
+  margin: 10px;
+  font-size: 24px;
+  animation: ani 1s linear infinite;
+}
+/* -------------------- Go TO Top -------------------- */
+.top {
+  position: fixed;
+  right: 20px;
+  bottom: -40px;
+  transition: 0.5s;
+}
+.top.active {
+  bottom: 20px;
+  right: 20px;
+}
+.top a {
+  width: 40px;
+  height: 40px;
+  line-height: 15px;
+  display: block;
+  border: 2px solid var(--color-lime);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 13px;
+  transition: 0.5s;
+}
+.top a:hover {
+  background-color: var(--color-lime);
+}
+.top a:hover span {
+  color: #fff;
+}
+.top a span {
+  color: var(--color-lime);
+  transition: 0.5s;
+}
+.top a span .fa {
+  display: block;
+}
+
+/* -------------------- Footer - XEicon Animation -------------------- */
+@keyframes ani {
+  0% {
+    transform: rotate(15deg) translate(-2px);
+  }
+  50% {
+    transform: rotate(15deg) translate(2px);
+  }
+  100% {
+    transform: rotate(15deg) translate(-2px);
+  }
+}
