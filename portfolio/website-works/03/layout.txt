@@ -1,0 +1,139 @@
+header
+  .gnb
+    .gnb-inner
+      .logo
+        a > img
+      .util-menu
+        a
+  .lnb
+    .lnb-inner
+      nav
+        a
+  .sub-menu
+    .sub-menu-box
+      .sub-menu-inner
+        .sub-menu-item
+          h2
+          a
+  .trigger
+
+section.welcome
+  .welcome-inner
+    .welcome-slide
+      .swiper-wrapper
+        .welcome-item
+          img
+          .welcome-desc
+            span
+            em
+      .swiper-button-next
+      .swiper-button-prev
+      .swiper-pagination
+
+section.best
+  .best-inner
+    .best-headline
+      span
+      h2
+    .best-btn
+      a
+    .best-tabs
+      .best-list
+        .best-item
+          .photo
+            img
+          .item-desc
+            h3
+            em, span, s
+
+section.banner
+  .banner-slide
+    .swiper-wrapper
+      .banner-item
+        .banner-desc
+          h2 > span
+          p
+          button
+    .swiper-button-next
+    .swiper-button-prev
+
+section.season
+  .season-inner
+    .season-title
+      .season-headline
+        span
+        h2
+      .season-btn
+        a
+      .season-tabs
+        .season-list
+          .left-photo
+            img
+          .right-slide
+            .season-swiper
+              .swiper-wrapper
+                .swiper-slide
+                  .photo-box
+                    img
+                  .info-box
+                    h3
+                    p
+                    span
+
+section.influencer
+  .influencer-inner
+    .influencer-title
+      .influencer-btn
+        a
+      .influencer-headline
+        span
+        h2
+    .influencer-tabs 
+      .influencer-list
+        .left-slide
+          .influencer-swiper
+            .swiper-wrapper
+              .swiper-slide
+                .photo-box
+                  img
+                .info-box
+                  h3
+                  p
+                  span
+
+section.quick
+  .quick-inner
+    .quick-item
+      .back
+      .front
+        h2 > span
+
+section.video
+  .video-inner
+    .video-slide
+      .swiper-wrapper
+        .swiper-slide
+          iframe
+      .swiper-button-next
+      .swiper-button-prev
+
+footer
+  .footer-inner
+    .footer-top
+      .footer-logo
+        img
+      .footer-tab
+        a
+        em
+    .footer-bottom
+      .company-info
+        span * 3
+        p 
+      .company-side
+        .sns
+          a > xeicon
+        .cs
+          h3 > span 
+
+.top
+  a > xeicon   
