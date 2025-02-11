@@ -2,9 +2,9 @@ $(function () {
   /* Scroll Event */
   $(window).scroll(function () {
     if ($(window).scrollTop() > 50) {
-      $("header").addClass("active");
+      $("header, .top").addClass("active");
     } else {
-      $("header").removeClass("active");
+      $("header, .top").removeClass("active");
     }
   });
 
