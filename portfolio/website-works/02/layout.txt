@@ -1,0 +1,128 @@
+header
+  header-inner
+    .logo
+      a > img
+    .trigger
+      a > xeicon
+    .util
+      a*2
+
+.modal
+  .modal-inner
+    .close-btn
+      xeicon
+    .modal-category
+      .modal-title
+        h2
+      .modal-item
+        a
+
+.welcome
+  .welcome-inner
+    .search
+      input
+    .main-category
+      li
+        a
+          img
+          span
+    .main-left
+      lmg
+    .nain-right
+      img
+
+.benefit
+  .benefit-inner
+    .headline-share
+      h1
+      p
+    .benefit-content
+      .benefit-item
+        a
+          img
+          span
+          h2
+    .benefit-btn
+      button
+
+.ride
+  .ride-inner
+    .headline-share
+      h1
+      p
+    .ride-content
+      .ride-btn
+        a*3
+      .ride-tabs
+        .tab-list
+          .ride-item
+            img
+            .item-content
+              h2
+              span
+
+.parade
+  .parade-inner
+    .headline-share
+      h1
+      p
+    .swiper.mySwiper
+      .swiper-wrapper
+        .swiper-slide
+          .photo
+            img
+          .desc
+            h2
+            p
+            a
+    .swiper-pagination
+
+.special
+  .special-inner
+    .headline-share
+      h1
+      p
+    .special-content
+      .special-left
+        .item
+          .thum
+            .photo > img
+            span
+          .thum
+            .photo > img
+            span
+      .special-right
+        .news
+          h2
+          (a > span)*4
+        .app
+          h2
+          p
+          span*5
+          .app-btn
+            .app-store
+            .google-play
+          img
+
+footer
+  .footer-inner
+    .footer-content
+      .footer-logo
+        img
+      .footer-info
+        h3
+        span*5
+      .sns-help
+        .sns
+          h3
+          a*3
+        .help
+          h3
+          span
+    .copyright
+      a
+      em
+      span
+
+.top
+  a > xeicon
