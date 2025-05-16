@@ -468,9 +468,6 @@ header.active {
 .swiper-slide {
   position: relative;
 }
-.swiper-slide:hover .desc {
-  top: 0;
-}
 .swiper-slide .photo {
   width: inherit;
   overflow: hidden;
@@ -489,6 +486,9 @@ header.active {
   color: #fff;
   padding: 20px;
   transition: 0.5s;
+}
+.swiper-slide .desc:hover {
+  top: 0;
 }
 .swiper-slide .desc h2 {
   font-size: 20px;

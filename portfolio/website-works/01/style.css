@@ -357,7 +357,6 @@ header.active {
   display: block;
 }
 /* ---------------------- Section : lush-pick --------------------- */
-.lush-pick {}
 .lush-inner {
   width: 1300px;
   margin: auto;
@@ -380,6 +379,20 @@ header.active {
 .slick-dots {
   position: absolute;
   bottom: -50px;
+}
+.slick-dots li button:before {
+  content: '';
+  background-color: #ddd;
+  opacity: 1;
+  width: 30px;
+  height: 7px;
+  /* border-radius: 3px; */
+  font-size: 10px;
+}
+.slick-dots li.slick-active button:before {
+  background-color: #777;
+  font-size: 20px;
+  display: inline-block;
 }
 /* ---------------------- Section : editor-pick --------------------- */
 .editor-pick {
