@@ -78,13 +78,19 @@
   }
   .brand-photo img {
     width: 100%;
+    height: 250px;
   }
   .brand-about {
-    padding: 0 15px;
-    padding-top: 50px;
+    padding: 0 10px;
+    padding-top: 20px;
   }
   .brand-about h2 {
-    font-size: 30px;
+    font-size: 24px;
+    text-align: left;
+  }
+  .brand-about p {
+    text-align: left;
+    font-size: 16px;
   }
   /* Change Order with flex */
   .brand-content.flex-order {
@@ -96,7 +102,8 @@
   }
   /* ---------------------- Section : value --------------------- */
   .value {
-    padding-bottom: 30px;
+    padding: 40px 0;
+    padding-bottom: 20px;
   }
   .value-inner {
     width: 100%;
@@ -108,6 +115,8 @@
     float: none;
     width: 100%;
   }
+  .tab-btn {
+  }
   .tab-btn label em {
     width: 90px;
     height: 90px;
@@ -116,15 +125,15 @@
     width: 53px;
   }
   .tab {
-    padding: 30px 20px;
+    padding: 20px 15px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .tab h2 {
-    font-size: 30px;
+    font-size: 22px;
   }
   .tab p {
-    font-size: 17px;
+    font-size: 15px;
   }
   /* ---------------------- Section : faq --------------------- */
   .faq {
@@ -136,10 +145,22 @@
   .faq-accordion {
     padding: 0;
   }
+  .faq-item > div {
+    padding: 10px;
+  }
+  .faq-title {
+    font-size: 20px;
+  }
+  .faq-desc {
+    font-size: 16px;
+  }
   .faq-title:after {
     display: none;
   }
   /* ---------------------- Section : lush-pick --------------------- */
+  .lush-pick {
+    padding-top: 10px;
+  }
   .lush-inner {
     width: 100%;
   }
@@ -172,22 +193,29 @@
   }
   .editor-items {
     margin-bottom: 0;
+    display: flex;
   }
   .editor-thum {
     width: 100%;
     margin-bottom: 15px;
   }
+  .editor-thum:first-child {
+    margin-right: 10px;
+  }
   .editor-photo {
     width: 100%;
+    margin-bottom: 5px;
   }
   .editor-thum em {
-    font-size: 20px;
+    font-size: 12px;
   }
   .editor-thum span {
-    font-size: 26px;
-    padding-top: 5px;
+    font-size: 16px;
   }
   /* --------------------------- Footer --------------------------- */
+  footer {
+    padding: 30px 10px;
+  }
   .footer-inner {
     width: 100%;
   }
@@ -198,9 +226,10 @@
     width: 100%;
     margin-bottom: 20px;
     padding: 0 80px;
+    text-align: center;
   }
   .footer-logo img {
-    width: 100%;
+    width: 60%;
   }
   .copyright {
     width: 100%;
@@ -209,10 +238,20 @@
   .policy-sns {
     padding: 0 20px 20px 20px;
   }
-  .sns {
+  .policy {
     float: none;
+  }
+  .policy span:last-child {
+    font-size: 10px;
+  }
+  .sns {
+    display: block;
+    width: 100%;
   }
   .address {
     padding: 20px 20px 0 20px;
+  }
+  .address span {
+    font-size: 12px;
   }
 }
