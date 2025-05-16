@@ -1,29 +1,38 @@
 /* fontawesome */
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 /* Xeicon */
-@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
 /* font - 펴진고딕 */
 @font-face {
-  font-family: 'PyeojinGothic-Bold';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2504-1@1.0/PyeojinGothic-Bold.woff2') format('woff2');
+  font-family: "PyeojinGothic-Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2504-1@1.0/PyeojinGothic-Bold.woff2")
+    format("woff2");
   font-weight: 700;
   font-style: normal;
 }
+/* font - Sorts Mill Goudy */
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 
 /* Reset CSS */
 * {
   box-sizing: border-box;
-  font-family: 'ChosunGu';
+  font-family: "ChosunGu";
 }
 a {
   text-decoration: none;
   color: #222;
 }
-input, button {
+input,
+button {
   border: none;
   outline: none;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   font-weight: normal;
 }
@@ -38,17 +47,13 @@ body {
   background-color: #fff;
 }
 section {
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
+  padding: 100px 0;
 }
 
 /* Common CSS */
 :root {
   --inner-width: 1200px;
-  --color-highlight: #ffe4c4; /* 네비비포 타이틀 */
-  --color-bright-yarrow: #fdcb6e; /* 헤더엑티브 */
-  --color-amber: #fff8e1; /* 홈 배경색 */
-  --font-color-gray: rgb(102, 102, 102); /* 홈 p태그 */
-  --color-lime: #9e9d24;
 }
 .headline {
   text-align: center;
@@ -59,12 +64,12 @@ section {
   font-size: 50px;
   position: relative;
   font-weight: bold;
-  color: #333;
+  color: #5D4037;
 }
 .headline h1::before {
-  content: '';
+  content: "";
   position: absolute;
-  background-color: #555;
+  background-color: #5D4037;
   width: 150px;
   height: 2px;
   bottom: -20px;
@@ -72,12 +77,13 @@ section {
   transform: translateX(-50%);
 }
 .headline span {
-  color: #555;
+  color: #795548;
   position: relative;
 }
 .headline a {
   position: absolute;
   right: 15px;
+  color: #795548;
 }
 
 /* -------------------- Header -------------------- */
@@ -113,7 +119,8 @@ header.active {
   width: 120px;
 }
 /* right gnb */
-.right-gnb {}
+.right-gnb {
+}
 .right-gnb > div {
   /* border: 1px solid #000; */
   height: 50%;
@@ -154,7 +161,8 @@ header.active {
   height: 100vh;
   object-fit: cover;
 }
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
   color: #999;
   position: absolute;
 }
@@ -171,6 +179,9 @@ header.active {
   left: 170px;
 } */
 /* -------------------- Section - stay -------------------- */
+.stay {
+  padding-top: 0;
+}
 .stay-inner {
   width: var(--inner-width);
   height: 80px;
@@ -181,7 +192,7 @@ header.active {
   flex: 8;
   display: flex;
   align-items: flex-end;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #D7CCC8;
   padding-bottom: 10px;
   text-align: center;
 }
@@ -196,13 +207,12 @@ header.active {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #555; 
-} 
+  color: #5D4037;
+}
 .stay-box a,
 .stay-box-n a {
   text-align: center;
-
-} 
+}
 .stay-search {
   flex: 1;
   padding: 18px 0 0 18px;
@@ -213,9 +223,12 @@ header.active {
   font-size: 18px;
   cursor: pointer;
   color: #fff;
-  background-color: #555;
+  background-color: #3E2723;
 }
 /* -------------------- Section - newhot -------------------- */
+.newhot {
+  padding-top: 0;
+}
 .newhot-inner {
   width: var(--inner-width);
   margin: auto;
@@ -304,8 +317,7 @@ header.active {
 }
 /* -------------------- Section - event -------------------- */
 .event {
-  background-color: #EFEBE9;
-  padding-top: 80px;
+  background-color: #efebe9;
 }
 .event-inner {
   width: var(--inner-width);
@@ -318,7 +330,7 @@ header.active {
   cursor: pointer;
 }
 .event-content .swiper-slide:hover h2 {
-  color: #A1887F;
+  color: #a1887f;
 }
 .event-content .swiper-slide img {
   width: 380px;
@@ -328,7 +340,7 @@ header.active {
   display: block;
   margin-top: 10px;
   font-size: 14px;
-  color: #A1887F;
+  color: #a1887f;
 }
 .event-content .swiper-slide h2 {
   margin: 10px 0;
@@ -344,21 +356,145 @@ header.active {
 .event-nextbt,
 .event-prevbt {
   position: absolute;
-}  
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  top: 38%;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   bottom: var(--swiper-pagination-bottom, 0px);
   top: var(--swiper-pagination-top, auto);
   left: 0;
   width: 100%;
 }
 .swiper-pagination-bullet-active {
-  background-color: #5D4037;
+  background-color: #5d4037;
   width: 20px;
   border-radius: 10px;
 }
 /* -------------------- Section - notice -------------------- */
+.notice-inner {
+  width: var(--inner-width);
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+.notice-inner:after {
+  content: '더보기 +';
+  position: absolute;
+  right: 3%;
+  bottom: 103%;
+  cursor: pointer;
+}
+.notice-inner > div {
+  border-top: 3px solid #795548;
+  margin: 0 30px;
+}
+.notice-title {
+  flex: 2;
+}
+.notice-title h1 {
+  font-size: 40px;
+}
+.notice-content {
+  flex: 8;
+}
+.notice-content a {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #EFEBE9;
+  transition: 0.3s;
+}
+.notice-content a:hover {
+  background-color: #efebe956;
+}
+.notice-content a em {
+  padding: 0 10px;
+}
 /* -------------------- Section - sono -------------------- */
+.sono {
+  background-color: #3a3331;
+  padding: 60px 0;
+}
+.sono-inner {
+  width: var(--inner-width);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.sono-content h2 {
+  color: #D2B48C;
+  font-family: "Sorts Mill Goudy", serif;
+  font-variant: small-caps;
+}
+.sono-content a {
+  display: block;
+  padding: 7px 0;
+  color: #D7CCC8;
+  font-size: 15px;
+}
+.sono-content a:hover {
+  color: #BCAAA4;
+}
 /* -------------------- footer -------------------- */
+footer {
+  background-color: rgb(81, 70, 66);
+} 
+.footer-inner {
+  width: var(--inner-width);
+  margin: auto;
+  color: #D7CCC8;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  font-size: 14px;
+}
+.footer-top a {
+  margin-right: 20px;
+  color: #D7CCC8;
+}
+.footer-top .sns {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.footer-bottom {
+  padding: 20px 0;
+  line-height: 2em;
+  font-weight: 300;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom .company a {
+  color: #D7CCC8;
+}
+.footer-bottom .company a:hover {
+  color: #BCAAA4;
+}
+.footer-bottom .company span {
+  display: block;
+}
+.footer-bottom .company span em {
+  font-style: normal;
+  margin: 10px;
+}
+.footer-bottom .tel {
+  border: 1px solid #d7ccc829;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+.footer-bottom .tel span {
+  margin: 0 5px;
+}
+.footer-bottom .tel em {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  margin-right: 5px;
+}
 /* -------------------- Go To Top -------------------- */
 .top {
   position: fixed;
