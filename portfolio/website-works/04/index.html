@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SONO</title>
+    <!-- jquery -->
+    <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom CSS & JS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <script src="./custom.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-inner">
+        <div class="left-gnb">
+          <a href="#none">호텔&리조트</a>
+          <a href="#none">액티비티</a>
+          <a href="#none">스페셜오더</a>
+        </div>
+        <div class="logo">
+          <a href="#"><img src="./image/logo.png" alt=""></a>
+        </div>
+        <div class="right-gnb">
+          <div class="gnb-top">
+            <a href="#none">로그인</a>
+            <em>|</em>
+            <a href="#none">예약확인</a>
+            <select name="ranguge" id="" size="1">
+              <option value="">한국어</option>
+              <option value="">English</option>
+            </select>
+          </div>
+          <div class="gnb-bottom">
+            <a href="#none">회원찾기</a>
+            <a href="#none">예약하기</a>
+            <a href="#none">멤버십</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Section - Welcome -->
+    <section class="welcome">
+      <div class="swiper welcome-slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./image/welcome02.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./image/welcome01.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-button-next welcome-nextbt"></div>
+        <div class="swiper-button-prev welcome-prevbt"></div>
+      </div>
+    </section>
+    <!-- Section - stay -->
+    <section class="stay">
+      <div class="stay-inner">
+        <div class="stay-check">
+          <div class="stay-box">
+            <span>지역 또는 숙소</span>
+            <input type="search" value="지역을 검색해주세요.">
+          </div>
+          <div class="stay-box">
+            <span>체크인</span>
+            <input type="date">
+          </div>
+          <div class="stay-box-n">
+            <span>~</span>
+            <a href="#none">1박</a>
+          </div>
+          <div class="stay-box">
+            <span>체크아웃</span>
+            <input type="date">
+          </div>
+          <div class="stay-box-n">
+            <span>객실</span>
+            <a href="#none">1</a>
+            <!-- <input type="number" value="1"> -->
+          </div>
+          <div class="stay-box-n">
+            <span>성인</span>
+            <a href="#none">2</a>
+          </div>
+          <div class="stay-box-n">
+            <span>어린이</span>
+            <a href="#none">0</a>
+          </div>
+          <div class="stay-box-n">
+            <span>유아</span>
+            <a href="#none">0</a>
+          </div>
+        </div>
+        <div class="stay-search">
+          <button>검색</button>
+        </div>
+      </div>
+    </section>
+    <!-- Section - newhot -->
+    <section class="newhot">
+      <div class="newhot-inner">
+        <div class="headline">
+          <h1>New & Hot</h1>
+          <span>새롭고 인기있는 추천상품</span>
+          <a href="#none">더보기 +</a>
+        </div>
+        <div class="newhot-top">
+          <div class="top-photo">
+            <img src="./image/newhot01.png" alt="">
+            <div class="top-dsc">
+              <p>소노펠리체 비발디파크 외 | 선물/기타 외</p>
+              <h2>[핫딜] 봄따라 소노따라 | 쑥스러운가 봄 패키지</h2>
+              <!-- <span>#봄한정  #시그니처 음료 #베이커리</span> -->
+              <span>2025.04.01~2025.05.31</span>
+              <!-- <em>87,000~</em> -->
+            </div>
+          </div>
+          <div class="top-photo">
+            <img src="./image/newhot02.png" alt="">
+            <div class="top-dsc">
+              <p>비발디파크 외 | 오션/아쿠아 외</p>
+              <h2>[비발디파크] 얼리버드 썸머 에디션 패키지</h2>
+              <!-- <span>객실 + 조식뷔페(선택) + [오션월드/인피니티풀/앤트월드]중 택1 + 액티비티 3종 + 13시 Late C/O + 특별혜택</span> -->
+              <span>2025.04.01~2025.06.30</span>
+              <!-- <em>139,000~</em> -->
+            </div>
+          </div>
+          <div class="top-photo">
+            <img src="./image/newhot03.png" alt="">
+            <div class="top-dsc">
+              <p>비발디파크 외 | 다이닝</p>
+              <h2>[소노펠리체] 더 엘테이스 5월 4일 디너뷔페</h2>
+              <!-- <span>더 엘테이스 5/4 디너붸페 이용권</span> -->
+              <span>2025.05.04~2025.05.04</span>
+              <!-- <em>32,300~</em> -->
+            </div>
+          </div>
+        </div>
+        <div class="newhot-bottom">
+          <div class="bottom-photo">
+            <img src="./image/newhot10.png" alt="">
+            <div class="bottom-dsc">
+              <p>소노펫클럽앤리조트 외 | 펫클럽</p>
+              <h2>[소노펙 비발디파크] 불멍앤와인 패키지</h2>
+              <span>소노펫 객실 + 불멍화로 + 와인무제한</span>
+              <span>2025.05.01~2025.07.17</span>
+              <!-- <em>225,000~</em> -->
+            </div>
+          </div>
+          <div class="bottom-photo">
+            <img src="./image/newhot05.png" alt="">
+            <div class="bottom-dsc">
+              <p>델피노 외 | 오션/아쿠아</p>
+              <h2>[델피노] Light Summer 패키지지</h2>
+              <span>객실 + 조식뷔페 3인/4인 or 오션플레이 3인/4인 + 할인권</span>
+              <span>2025.05.06~2025.07.17</span>
+              <!-- <em>134,000~</em> -->
+            </div>
+          </div>
+          <div class="bottom-photo">
+            <img src="./image/newhot09.png" alt="">
+            <div class="bottom-dsc">
+              <p>솔비치 양양 | 다이닝 외</p>
+              <h2>[솔비치 양양] 우드캐빈 & 피크닉박스 패키지</h2>
+              <span>우드캐빈(종일권) + 피크닉박스 패키지</span>
+              <span>2025.05.01~2025.06.05</span>
+              <!-- <em>80,000~</em> -->
+            </div>
+          </div>
+          <div class="bottom-photo">
+            <img src="./image/newhot06.png" alt="">
+            <div class="bottom-dsc">
+              <p>소노캄고양 | 선물/기타</p>
+              <h2>[소노캄고양] Sweet Blossom 패키지</h2>
+              <span>객실1박 + 알라고 벚꽃 음료 2잔 & 디저트 2EA</span>
+              <span>2025.04.25~2025.05.10</span>
+              <!-- <em>164,000~</em> -->
+            </div>
+          </div>
+          <div class="bottom-photo">
+            <img src="./image/newhot08.png" alt="">
+            <div class="bottom-dsc">
+              <p>솔비치 양양 | 오션/아쿠아 외</p>
+              <h2>[솔비치 양양] 로얄 카바나 & 피크닉박스 패키지</h2>
+              <span>로얄 카바나(종일권) + 피크닉박스 패키지</span>
+              <span>2025.05.01~2025.06.05</span>
+              <!-- <em>150,000~</em> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section - event -->
+    <section class="event">
+      <div class="event-inner">
+        <div class="headline">
+          <h1>Event & Benefit</h1>
+          <span>특별한 이벤트와 혜택</span>
+          <a href="none">더보기 +</a>
+        </div>
+        <div class="event-content">
+          <div class="swiper event-slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./image/event01.png" alt="">
+                <span>소노벨 변산 외</span>
+                <h2>SONO WATER PARK</h2>
+                <p>2025.04.25 ~ 2025.08.31</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/event02.png" alt="">
+                <span>소노벨 단양 외</span>
+                <h2>5월 기획전 'May, Be Together'</h2>
+                <p>2025.04.25 ~ 2025.05.31</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/event03.png" alt="">
+                <span>소노벨 변산 외</span>
+                <h2>패밀리 어드벤처 whit 
+                  Cetaphil Baby
+                </h2>
+                <p>2025.05.14 ~ 2025.07.31</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/event04.png" alt="">
+                <span>소노벨 고양</span>
+                <h2>여름시즌 피트니스 클럽 운영 안내</h2>
+                <p>2025.05.31 ~ 2025.09.28</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/event05.png" alt="">
+                <span>소노벨 제주</span>
+                <h2>암덕 서우봉 PACKGE</h2>
+                <p>2025.04.30 ~ 2025.07.17</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/event06.png" alt="">
+                <span>소노벨 거제 외</span>
+                <h2>오션어드벤처 NO SCHOOL DAY</h2>
+                <p>2025.05.01 ~ 2025.12.31</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/event07.png" alt="">
+                <span>오션플레이 삼척 외</span>
+                <h2>[쏠비치 삼척] 산토리니 가든 BBQ</h2>
+                <p>2025.05.01 ~ 2025.10.12</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/event08.png" alt="">
+                <span>소노벨 델피노 외</span>
+                <h2>리무진 골프카트 이용 안내</h2>
+                <p>2025.04.25 ~ 2025.12.31</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/event09.png" alt="">
+                <span>소노벨 비발디파크 외</span>
+                <h2>NH농협카드X오션월드 키즈 페스티벌</h2>
+                <p>2025.05.01 ~ 2025.05.31</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/event10.png" alt="">
+                <span>쏠비치 진도</span>
+                <h2>진도 자연밥상</h2>
+                <p>2025.04.17 ~ 2025.12.31</p>
+              </div>
+            </div>
+            <div class="swiper-button-next event-nextbt"></div>
+            <div class="swiper-button-prev
+            event-prevbt"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section - notice -->
+    <section class="notice"></section>
+    <!-- Section - sono -->
+    <section class="sono"></section>
+    <!-- Footer -->
+    <footer></footer>
+    <!-- Go To Top -->
+    <div class="top">
+      <a href="#"><i class="xi-angle-up"></i></a>
+    </div>
+  </body>
+</html>
