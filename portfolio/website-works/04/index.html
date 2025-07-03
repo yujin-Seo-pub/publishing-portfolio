@@ -2,6 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SONO</title>
     <!-- jquery -->
     <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
@@ -48,17 +49,25 @@
     </header>
     <!-- Section - Welcome -->
     <section class="welcome">
-      <div class="swiper welcome-slide">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./image/welcome02.png" alt="" />
+      <div class="welcome-inner">
+        <div class="swiper welcome-slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide01">
+              <img src="./image/welcome02.png" alt="" />
+            </div>
+            <div class="swiper-slide slide02">
+              <img src="./image/welcome01.png" alt="" />
+            </div>
+            <div class="swiper-slide slide03">
+              <img src="./image/welcome03.png" alt="" />
+            </div>
+            <div class="swiper-slide slide04">
+              <img src="./image/welcome04.png" alt="" />
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img src="./image/welcome01.png" alt="" />
-          </div>
+          <div class="swiper-button-next welcome-nextbt"></div>
+          <div class="swiper-button-prev welcome-prevbt"></div>
         </div>
-        <div class="swiper-button-next welcome-nextbt"></div>
-        <div class="swiper-button-prev welcome-prevbt"></div>
       </div>
     </section>
     <!-- Section - stay -->
@@ -287,7 +296,9 @@
         </div>
         <div class="notice-content">
           <a href="#none"><em>•</em> 2025년 EAST 부분 리뉴얼 오픈 안내</a>
-          <a href="#none"><em>•</em> 2025년 여름 성수기 및 하반기 객실예약 오픈 안내</a>
+          <a href="#none"
+            ><em>•</em> 2025년 여름 성수기 및 하반기 객실예약 오픈 안내</a
+          >
           <a href="#none"><em>•</em> 쏠비치 남해 객실 예약</a>
         </div>
       </div>
@@ -364,13 +375,21 @@
             <a class="sns" href="#none"><i class="xi-kakaotalk"></i></a>
             <a class="sns" href="#none"><i class="fa fa-instagram"></i></a>
             <a class="sns" href="#none"><i class="fa fa-youtube-play"></i></a>
-            <a class="sns" href="#none"><i class="fa fa-facebook-square"></i></a>
+            <a class="sns" href="#none"
+              ><i class="fa fa-facebook-square"></i
+            ></a>
           </div>
         </div>
         <div class="footer-bottom">
           <div class="company">
-            <a href="#none">강원특별자치도 홍천군 서면 한치골길 262 <i class="xi-maker"></i></a>
-            <span>사업자등록번호 223-81-08341 <em>|</em> 통신판매업신고 2004-강원홍천-00008 <em>|</em> 통신판매사업자 정보 <em>|</em> 대표이사 : 이광수, 이병천, 권광수</span>
+            <a href="#none"
+              >강원특별자치도 홍천군 서면 한치골길 262 <i class="xi-maker"></i
+            ></a>
+            <span
+              >사업자등록번호 223-81-08341 <em>|</em> 통신판매업신고
+              2004-강원홍천-00008 <em>|</em> 통신판매사업자 정보
+              <em>|</em> 대표이사 : 이광수, 이병천, 권광수</span
+            >
             <span>COPYRIGHT ⓒ SONO HOTELS & RESORTS ALL Right Reserved.</span>
           </div>
           <div class="tel">
@@ -382,7 +401,31 @@
     </footer>
     <!-- Go To Top -->
     <div class="top">
-      <a href="#"><i class="xi-angle-up"></i></a>
+      <a href="#"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- responsive qick-menu -->
+    <div class="qick-menu">
+      <a href="#none">통합예약</a>
+      <a href="#none">예약확인</a>
+      <a href="#none">멤버쉽</a>
+      <a href="#none">마이페이지</a>
+    </div>
+    <!-- responsive side-menu -->
+    <div class="side-menu">
+      <a href="#none">로그인</a>
+      <div class="log-btn">
+        <button>통합예약</button>
+        <button>회원찾기</button>
+        <button>예약확인</button>
+      </div>
+      <a href="#none">멤버쉽</a>
+      <a href="#none">호텔 & 리조트</a>
+      <a href="#none">액티비티</a>
+      <a href="#none">스페셜오더</a>
+      <div class="close-btn"><i class="fa fa-times"></i></div>
+    </div>
+    <div class="trigger">
+      <i class="fa fa-bars"></i>
     </div>
   </body>
 </html>

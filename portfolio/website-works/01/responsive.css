@@ -45,11 +45,11 @@
     line-height: 30px;
   }
   .trigger:before {
-    content: '\e91c';
-    font-family: xeicon;
+    content: '\f0c9';
+    font-family: fontawesome;
   }
   .trigger.active:before {
-    content: '\e921';
+    content: '\f00d';
   }
   /* ---------------------- Section : welcome --------------------- */
   .welcome-heading {

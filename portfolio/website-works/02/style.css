@@ -238,8 +238,8 @@ header.active {
   margin-top: 20px;
 }
 .search:before {
-  content:'\e97a';
-  font-family: xeicon;
+  content:'\f002';
+  font-family: fontawesome;
   position: absolute;
   font-size: 28px;
   left: 18px;
