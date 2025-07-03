@@ -390,12 +390,14 @@ nav a:hover:before {
 }
 .web-pub input[id="web1"]:checked ~ .web-btn label[for="web1"]::before,
 .web-pub input[id="web2"]:checked ~ .web-btn label[for="web2"]::before,
-.web-pub input[id="web3"]:checked ~ .web-btn label[for="web3"]::before {
+.web-pub input[id="web3"]:checked ~ .web-btn label[for="web3"]::before,
+.web-pub input[id="web4"]:checked ~ .web-btn label[for="web4"]::before {
   width: 100%;
 }
 .web-pub input[id="web1"]:checked ~ .web-list .web-item:nth-child(1),
 .web-pub input[id="web2"]:checked ~ .web-list .web-item:nth-child(2),
-.web-pub input[id="web3"]:checked ~ .web-list .web-item:nth-child(3) {
+.web-pub input[id="web3"]:checked ~ .web-list .web-item:nth-child(3),
+.web-pub input[id="web4"]:checked ~ .web-list .web-item:nth-child(4) {
   opacity: 1;
   visibility: visible;
 }
