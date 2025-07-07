@@ -75,12 +75,12 @@
     z-index: 30;
   }
   .trigger:before {
-    content: "\e91c";
-    font-family: xeicon;
+    content: "\f0c9";
+    font-family: fontawesome;
     color: #fff;
   }
   .trigger.active:before {
-    content: "\e921";
+    content: "\f00d";
     color: #222;
   }
   /* --------------------------- Section - welcome --------------------------- */
