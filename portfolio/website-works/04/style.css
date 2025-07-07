@@ -520,3 +520,14 @@ footer {
 .top a:hover {
   opacity: 0.7;
 }
+  /* -------------------- qick-menu -------------------- */
+  .qick-menu {
+    display: none;
+  }
+  /* -------------------- side-menu -------------------- */
+  .side-menu {
+    display: none;
+  }
+  .trigger {
+    display: none;
+  }

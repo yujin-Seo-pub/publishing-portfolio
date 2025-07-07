@@ -445,6 +445,7 @@
   }
   /* -------------------- qick-menu -------------------- */
   .qick-menu {
+    display: block;
     position: fixed;
     bottom: -60px;
     background-color: #5d4037;
@@ -467,6 +468,7 @@
   }
   /* -------------------- side-menu -------------------- */
 .side-menu {
+  display: block;
   position: fixed;
   top: 0;
   left: 100%;
@@ -507,6 +509,7 @@
 }
 /* -------------------- trigger -------------------- */
 .trigger {
+  display: block;
   position: fixed;
   top: 20px;
   right: 20px;
