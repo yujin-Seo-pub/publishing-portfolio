@@ -1,0 +1,520 @@
+@media (max-width: 768px) {
+  /* Default CSS */
+  section {
+    padding: 50px 0;
+  }
+  /* Common CSS */
+  :root {
+    --inner-width: 100%;
+  }
+  .headline {
+    text-align: center;
+    padding-bottom: 15px;
+    position: relative;
+  }
+  .headline h1 {
+    font-size: 26px;
+    position: relative;
+    font-weight: bold;
+    color: #5d4037;
+  }
+  .headline h1::before {
+    content: "";
+    position: absolute;
+    background-color: #5d4037;
+    width: 100px;
+    height: 2px;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .headline span {
+    color: #795548;
+    position: relative;
+    font-size: 12px;
+  }
+  .headline a {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: #795548;
+    font-size: 12px;
+  }
+  /* -------------------- Header -------------------- */
+  header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  header.active {
+    background-color: #ffffff;
+    display: none;
+  }
+  .header-inner {
+    width: var(--inner-width);
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .left-gnb,
+  .right-gnb {
+    display: none;
+  }
+  /* logo */
+  .logo {
+    padding-top: 15px;
+  }
+  .logo a img {
+    width: 100px;
+  }
+  /* -------------------- Section - Welcome -------------------- */
+  .welcome {
+    padding: 0;
+  }
+  .welcome img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+  .slide01,
+  .slide02 {
+    display: none;
+  }
+  .slide03,
+  .slide04 {
+    display: block;
+  }
+  /* -------------------- Section - stay -------------------- */
+  .stay {
+    padding-top: 0;
+    display: none;
+  }
+  .stay-inner {
+    width: var(--inner-width);
+    height: 80px;
+    margin: auto;
+    display: flex;
+  }
+  .stay-check {
+    flex: 8;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 2px solid #d7ccc8;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .stay-box {
+    width: 20%;
+  }
+  .stay-box-n {
+    width: 8%;
+  }
+  .stay-box span,
+  .stay-box-n span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #5d4037;
+    font-size: 10px;
+  }
+  .stay-box a,
+  .stay-box-n a {
+    text-align: center;
+  }
+  .stay-search {
+    flex: 1;
+    padding: 18px 0 0 18px;
+  }
+  .stay-search button {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #3e2723;
+  }
+  /* -------------------- Section - newhot -------------------- */
+  .newhot {
+    padding-top: 50px;
+  }
+  .newhot-inner {
+    width: var(--inner-width);
+    margin: auto;
+  }
+  /* newhot-top */
+  .newhot-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 105px;
+    gap: 10px;
+    padding: 0 10px;
+  }
+  .top-photo {
+    position: relative;
+    cursor: pointer;
+  }
+  .top-photo img {
+    width: 100%;
+    height: 100%;
+  }
+  .top-dsc {
+    position: absolute;
+    bottom: 0;
+    padding: 75px 10px 0 10px;
+    color: #fff;
+  }
+  .top-dsc p {
+    display: none;
+  }
+  .top-dsc h2 {
+    font-weight: bold;
+    font-size: 7px;
+    margin-bottom: 0px;
+  }
+  .top-dsc span {
+    display: none;
+  }
+  /* newhot-bottom */
+  .newhot-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 105px 30px 105px;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  .bottom-photo {
+    position: relative;
+    cursor: pointer;
+  }
+  .bottom-photo:nth-child(1) {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .bottom-photo:nth-child(3) {
+    grid-row: 2/4;
+  }
+  .bottom-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bottom-photo:nth-child(1) img {
+    object-position: 0 -80px;
+  }
+  .bottom-dsc {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 10px;
+  }
+  .bottom-dsc p {
+    display: none;
+  }
+  .bottom-dsc h2 {
+    font-weight: bold;
+    font-size: 8px;
+    margin-bottom: 0px;
+  }
+  .bottom-dsc span {
+    display: none;
+  }
+  /* -------------------- Section - event -------------------- */
+  .event {
+    background-color: #efebe9;
+  }
+  .event-inner {
+    width: var(--inner-width);
+    margin: auto;
+    padding: 10px;
+  }
+  .event-content {
+    position: relative;
+  }
+  .event-content .swiper-slide {
+    cursor: pointer;
+  }
+  .event-content .swiper-slide:hover h2 {
+    color: #a1887f;
+  }
+  .event-content .swiper-slide img {
+    width: 95px;
+    /* width: 100%; */
+    height: 100px;
+  }
+  .event-content .swiper-slide span {
+    display: block;
+    margin-top: 3px;
+    font-size: 8px;
+    color: #a1887f;
+  }
+  .event-content .swiper-slide h2 {
+    margin: 3px 0;
+    font-size: 10px;
+    opacity: 0.2s;
+  }
+  .event-content .swiper-slide p {
+    padding-bottom: 40px;
+    margin: 0;
+    font-size: 7px;
+    color: #795548;
+  }
+  .event-nextbt,
+  .event-prevbt {
+    position: absolute;
+    top: 38%;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, 0px);
+    top: var(--swiper-pagination-top, auto);
+    left: 0;
+    width: 100%;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #5d4037;
+    width: 20px;
+    border-radius: 10px;
+  }
+  /* -------------------- Section - notice -------------------- */
+  .notice-inner {
+    width: var(--inner-width);
+    margin: auto;
+    display: flex;
+    position: relative;
+  }
+  .notice-inner:after {
+    content: "더보기 +";
+    position: absolute;
+    right: 4%;
+    bottom: 105%;
+    cursor: pointer;
+    font-size: 8px;
+  }
+  .notice-inner > div {
+    border-top: 2px solid #795548;
+    margin: 0px 12px;
+  }
+  .notice-title {
+    flex: 2;
+  }
+  .notice-title h1 {
+    font-size: 14px;
+    padding-top: 2px;
+    padding-left: 3px;
+  }
+  .notice-content {
+    flex: 8;
+  }
+  .notice-content a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #efebe9;
+    transition: 0.3s;
+    font-size: 8px;
+  }
+  .notice-content a:hover {
+    background-color: #efebe956;
+  }
+  .notice-content a em {
+    padding: 0 5px;
+  }
+  /* -------------------- Section - sono -------------------- */
+  .sono {
+    background-color: #3a3331;
+    padding: 10px 0;
+  }
+  .sono-inner {
+    width: var(--inner-width);
+    margin: auto;
+    display: inline;
+    padding: 0 10px;
+  }
+  .sono-content {
+    padding: 0 20px;
+  }
+  .sono-content h2 {
+    color: #d2b48c;
+    font-family: "Sorts Mill Goudy", serif;
+    font-variant: small-caps;
+    font-size: 10px;
+  }
+  .sono-content a {
+    padding: 7px 0;
+    color: #d7ccc8;
+    font-size: 7px;
+    display: none;
+  }
+  .sono-content a:hover {
+    color: #bcaaa4;
+  }
+  /* -------------------- footer -------------------- */
+  footer {
+    background-color: rgb(81, 70, 66);
+  }
+  .footer-inner {
+    width: var(--inner-width);
+    margin: auto;
+    color: #d7ccc8;
+    padding: 0 20px;
+  }
+  .footer-top {
+    display: block;
+    padding: 15px 0;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.8em;
+  }
+  .footer-top a {
+    margin-right: 6px;
+    color: #d7ccc8;
+  }
+  .footer-top .sns {
+    margin-right: 6px;
+    font-size: 10px;
+  }
+  .footer-bottom {
+    padding: 10px 0;
+    line-height: 2em;
+    font-weight: 300;
+    font-size: 8px;
+    display: block;
+    justify-content: space-between;
+  }
+  .footer-bottom .company a {
+    color: #d7ccc8;
+  }
+  .footer-bottom .company a:hover {
+    color: #bcaaa4;
+  }
+  .footer-bottom .company span {
+    display: block;
+  }
+  .footer-bottom .company span em {
+    font-style: normal;
+    margin: 10px;
+  }
+  .footer-bottom .tel {
+    border: 1px solid #d7ccc829;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 10px 0;
+  }
+  .footer-bottom .tel span {
+    margin: 0 5px;
+  }
+  .footer-bottom .tel em {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    margin-right: 5px;
+  }
+  /* -------------------- Go To Top -------------------- */
+  .top {
+    position: fixed;
+    right: 10px;
+    bottom: -50px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .top.active {
+    right: 10px;
+    bottom: 10px;
+  }
+  .top a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    opacity: 0.5;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  .top a:hover {
+    opacity: 0.7;
+  }
+  /* -------------------- qick-menu -------------------- */
+  .qick-menu {
+    position: fixed;
+    bottom: -60px;
+    background-color: #5d4037;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    opacity: 1;
+    z-index: 100;
+    transition: 0.7s;
+  }
+  .qick-menu.active {
+    bottom: 0;
+  }
+  .qick-menu a {
+    color: #fff;
+    padding: 12px;
+    font-size: 12px;
+  }
+  /* -------------------- side-menu -------------------- */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  transition: 0.5s;
+  opacity: 1;
+}
+.side-menu.active {
+  left: 0;
+}
+.side-menu .log-btn {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+.side-menu button {
+  padding: 15px 20px;
+  color: #fff;
+  background-color: #999;
+}
+.side-menu a {
+  display: block;
+  margin-left: 18px;
+  line-height: 1.8em;
+  font-weight: bold;
+}
+.side-menu a:nth-child(1) {
+  padding-top: 20px;
+}
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #555;
+}
+/* -------------------- trigger -------------------- */
+.trigger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  color: #666;
+  opacity: 1;
+}
+.trigger.active {
+  display: none;
+}
+}

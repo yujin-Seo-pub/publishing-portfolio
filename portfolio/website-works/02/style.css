@@ -1,34 +1,46 @@
 /* Fontawesome 4.7 */
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 /* Xeicon */
-@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
 /* Web Font - LotteMartHappy */
 @font-face {
-  font-family: 'LotteMartHappy';
+  font-family: "LotteMartHappy";
   font-style: normal;
   font-weight: 400;
-  src: url('//fastly.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('//fastly.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+  src: url("//fastly.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2")
+      format("woff2"),
+    url("//fastly.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff")
+      format("woff");
 }
 @font-face {
-  font-family: 'LotteMartHappy';
+  font-family: "LotteMartHappy";
   font-style: normal;
   font-weight: 700;
-  src: url('//fastly.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('//fastly.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff');
+  src: url("//fastly.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2")
+      format("woff2"),
+    url("//fastly.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff")
+      format("woff");
 }
 
 /* Reset CSS */
 * {
   box-sizing: border-box;
-  font-family: 'LotteMartHappy', sans-serif;
+  font-family: "LotteMartHappy", sans-serif;
 }
 a {
   text-decoration: none;
   color: #222;
 }
-input, button {
+input,
+button {
   outline: none;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   font-weight: normal;
   line-height: 1.5em;
@@ -97,9 +109,9 @@ header.active {
 }
 .trigger {
   float: right;
-  font-size: 32px;
+  font-size: 20px;
   margin: 0 15px;
-  padding-top: 3px;
+  padding-top: 1px;
 }
 .util {
   float: right;
@@ -110,9 +122,9 @@ header.active {
   position: relative;
 }
 .util a:before {
-  content: '';
+  content: "";
   position: absolute;
-  background-color: #F08080;
+  background-color: #f08080;
   width: 0;
   height: 3px;
   bottom: -5px;
@@ -128,7 +140,7 @@ header.active {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #FFE4E1;
+  background-color: #ffe4e1;
   z-index: 60;
   width: 340px;
   height: 100vh;
@@ -166,12 +178,12 @@ header.active {
 .modal-title {
   padding: 10px;
   cursor: pointer;
-  border-bottom: 1px solid #F08080;
+  border-bottom: 1px solid #f08080;
   position: relative;
 }
 .modal-title:after {
-  content: '\e941';
-  font-family: xeicon;
+  content: "\f107";
+  font-family: fontawesome;
   position: absolute;
   right: 10px;
   top: 15px;
@@ -185,14 +197,14 @@ header.active {
   font-weight: bold;
 }
 .modal-title h2:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 5px;
   bottom: -12px;
   left: 0;
   transition: 0.5s;
-  background-color: #F08080;
+  background-color: #f08080;
 }
 .modal-title h2:hover:before {
   width: 100%;
@@ -210,14 +222,14 @@ header.active {
   color: #444;
 }
 .modal-item a:hover {
-  color: #F08080;
+  color: #f08080;
 }
 .modal-item a:last-child {
   padding-bottom: 0;
 }
 /* ---------------------- Section : welcome --------------------- */
 .welcome {
-  background-color: #F08080;
+  background-color: #f08080;
   height: 100vh;
   padding-top: 200px;
 }
@@ -238,7 +250,7 @@ header.active {
   margin-top: 20px;
 }
 .search:before {
-  content:'\f002';
+  content: "\f002";
   font-family: fontawesome;
   position: absolute;
   font-size: 28px;
@@ -246,7 +258,7 @@ header.active {
   top: 12px;
   color: #555;
 }
-.search input[type=text] {
+.search input[type="text"] {
   width: 100%;
   height: 50px;
   border-radius: 30px;
@@ -254,10 +266,10 @@ header.active {
   font-size: 17px;
   border: none;
 }
-.search input[type=text]:focus::placeholder {
+.search input[type="text"]:focus::placeholder {
   opacity: 0;
 }
-.search input[type=text]::placeholder {
+.search input[type="text"]::placeholder {
   transition: 0.5s;
 }
 .main-category {
@@ -275,7 +287,7 @@ header.active {
   background-color: #fff;
   border-radius: 10px;
   padding: 10px 0;
-  background-color: #F08080;
+  background-color: #f08080;
   transition: 0.5s;
 }
 .main-category li a {
@@ -284,7 +296,8 @@ header.active {
 }
 .main-category li img {
   width: 60px;
-  filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(250deg) brightness(107%) contrast(102%);
+  filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(250deg)
+    brightness(107%) contrast(102%);
 }
 .main-category li span {
   font-size: 20px;
@@ -296,10 +309,11 @@ header.active {
   background-color: #fff;
 }
 .main-category li:hover img {
-  filter: invert(89%) sepia(34%) saturate(1966%) hue-rotate(298deg) brightness(94%) contrast(101%);
+  filter: invert(89%) sepia(34%) saturate(1966%) hue-rotate(298deg)
+    brightness(94%) contrast(101%);
 }
 .main-category li:hover span {
-  color: #F08080;
+  color: #f08080;
 }
 .main-left img,
 .main-right img {
@@ -314,7 +328,8 @@ header.active {
   right: 0;
 }
 /* ---------------------- Section : benefit --------------------- */
-.benefit {}
+.benefit {
+}
 .benefit-inner {
   width: 1400px;
   margin: auto;
@@ -332,21 +347,22 @@ header.active {
   transition: 0.3s;
 }
 .benefit-item:hover {
-  border: 2px solid #F08080;
+  border: 2px solid #f08080;
   box-shadow: 10px 10px 20px #eee;
 }
 .benefit-item:hover a h2 {
-  color: #F08080;
+  color: #f08080;
 }
 .benefit-item a {
   display: inline-block;
 }
-.benefit-item a img {}
+.benefit-item a img {
+}
 .benefit-item a span {
   display: block;
   font-size: 19px;
   padding: 20px 0 10px 0;
-  color: #F08080;
+  color: #f08080;
 }
 .benefit-item a h2 {
   font-size: 22px;
@@ -358,7 +374,7 @@ header.active {
 .benefit-btn button {
   padding: 15px 30px;
   border-radius: 30px;
-  background-color: #F08080;
+  background-color: #f08080;
   border: none;
   color: #fff;
   font-size: 16px;
@@ -371,7 +387,7 @@ header.active {
 }
 /* ---------------------- Section : ride --------------------- */
 .ride {
-  background-color: #FFE4E1;
+  background-color: #ffe4e1;
 }
 .ride-inner {
   width: 1400px;
@@ -381,7 +397,8 @@ header.active {
   overflow: hidden;
   text-align: center;
 }
-.ride-btn {}
+.ride-btn {
+}
 .ride-btn a {
   display: inline-block;
   width: 200px;
@@ -390,15 +407,16 @@ header.active {
   padding: 15px 20px;
   font-size: 18px;
   margin: 5px 10px 50px 10px;
-  color: #F08080;
+  color: #f08080;
   background-color: #fff;
   transition: 0.3s;
 }
 .ride-btn a.active {
-  background-color: #F08080;
+  background-color: #f08080;
   color: #fff;
 }
-.ride-tabs {}
+.ride-tabs {
+}
 .ride-list {
   display: none;
 }
@@ -422,7 +440,7 @@ header.active {
   display: block;
 }
 .item-content {
-  background-color: #F08080;
+  background-color: #f08080;
   padding: 10px 15px;
   padding-bottom: 15px;
   transition: 0.3s;
@@ -453,7 +471,7 @@ header.active {
 }
 /* ---------------------- Section : parade --------------------- */
 .parade {
-  background-color: #DCEDC8;
+  background-color: #dcedc8;
 }
 .parade-inner {
   width: 1400px;
@@ -464,7 +482,8 @@ header.active {
 .swiper {
   margin-top: 30px;
 }
-.swiper-wrapper {}
+.swiper-wrapper {
+}
 .swiper-slide {
   position: relative;
 }
@@ -511,7 +530,7 @@ header.active {
   bottom: -50px;
 }
 .swiper-pagination-bullet {
-  background-color: #C5E1A5;
+  background-color: #c5e1a5;
   width: 50px;
   height: 10px;
   border-radius: 10px;
@@ -519,13 +538,14 @@ header.active {
   transition: 0.5s;
 }
 .swiper-pagination-bullet-active {
-  background-color: #AED581;
+  background-color: #aed581;
   width: 100px;
   height: 13px;
   opacity: 1;
 }
 /* ---------------------- Section : special --------------------- */
-.special {}
+.special {
+}
 .special-inner {
   width: 1300px;
   margin: auto;
@@ -564,7 +584,7 @@ header.active {
   transform: scale(1.1);
 }
 .special-left .item .thum .photo:hover + span {
-  color: #F08080;
+  color: #f08080;
 }
 .special-left .item .thum .photo img {
   width: inherit;
@@ -578,11 +598,12 @@ header.active {
   font-size: 22px;
   transition: 0.3s;
 }
-.special-right {}
+.special-right {
+}
 .special-right .news {
   background-color: #ddd;
 }
-.special-right .news, 
+.special-right .news,
 .special-right .app {
   padding: 0 30px;
   border-radius: 20px;
@@ -597,8 +618,8 @@ header.active {
   margin-bottom: 15px;
 }
 .special-right .news h2:after {
-  content: '\e90b';
-  font-family: xeicon;
+  content: "\f067";
+  font-family: fontawesome;
   font-size: 18px;
   float: right;
   cursor: pointer;
@@ -622,7 +643,7 @@ header.active {
 }
 .special-right .app {
   position: relative;
-  background-color: #FFE4E1;
+  background-color: #ffe4e1;
 }
 .special-right .app h2 {
   margin-bottom: 5px;
@@ -643,7 +664,7 @@ header.active {
   border-radius: 20px;
   margin-right: 10px;
   cursor: pointer;
-  background-color: #F08080;
+  background-color: #f08080;
   color: #fff;
   border: none;
   transition: 0.3s;
@@ -651,12 +672,12 @@ header.active {
 }
 .google-play {
   background-color: #fff;
-  color: #F08080;
+  color: #f08080;
 }
 .app-store:hover {
-  border: 2px solid #F08080;
+  border: 2px solid #f08080;
   background-color: transparent;
-  color: #F08080;
+  color: #f08080;
 }
 .google-play:hover {
   border: 2px solid #fff;
@@ -671,7 +692,7 @@ header.active {
 }
 /* --------------------------- Footer --------------------------- */
 footer {
-  background: #FFE4E1 url('./images/footer-img.png');
+  background: #ffe4e1 url("./images/footer-img.png");
   background-repeat: no-repeat;
   background-position: bottom 0px right 170px;
   background-size: 350px 280px;
@@ -709,9 +730,9 @@ footer {
 .info h3:before,
 .sns h3:before,
 .help h3:before {
-  content: '';
+  content: "";
   position: absolute;
-  background: #F08080;
+  background: #f08080;
   width: 100%;
   height: 3px;
   bottom: 0;
@@ -736,7 +757,8 @@ footer {
   padding: 50px;
   padding-left: 260px;
 }
-.copyright a {}
+.copyright a {
+}
 .copyright em {
   font-style: normal;
 }
@@ -748,7 +770,7 @@ footer {
   position: fixed;
   bottom: -80px;
   right: 20px;
-  box-shadow: 0 0 10px #F08080;
+  box-shadow: 0 0 10px #f08080;
   background-color: #fff;
   width: 50px;
   height: 50px;
@@ -763,7 +785,7 @@ footer {
   bottom: 20px;
 }
 .top a {
-  color: #F08080;
+  color: #f08080;
   display: block;
 }
 

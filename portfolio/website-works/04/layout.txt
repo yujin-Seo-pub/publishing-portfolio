@@ -1,0 +1,98 @@
+header
+  .header-inner
+    .left-gnb
+      a * 3
+    .logo
+      a > img
+    .right-gnb
+      .gnb-top
+        a, em
+        select > option * 2 
+      .gnb-bottom 
+        a * 3
+
+section.welcome
+  .welcome-inner
+    .welcome-slide
+      .swiper-wrapper
+        .swiper-slide
+          img
+      .swiper-button-next
+      .swiper-button-prev
+
+section.stay
+  .stay-inner 
+  .stay-check
+    .stay-box
+      span
+      input or a
+  .stay-search
+    button
+
+section.newhot
+  .newhot-inner
+    headline
+      h1
+      span
+      a
+    .newhot-top
+      .top-photo
+        img
+        .top-dsc
+          p
+          h2
+          span
+    .newhot-bottom
+      .bottom-photo
+        img
+        .bottom-dsc
+          p
+          h2
+          span
+
+section.event
+  .event-inner
+    headline
+      h1
+      span
+      a
+    .event-content
+      .event-slide
+        .swiper-wrapper
+          .swiper-slide
+            img
+            span
+            h2
+            p
+          .swiper-button-next
+          .swiper-button-prev
+          .swiper-pagination
+
+section.notice
+  .notice-inner
+    .notice-title
+      h1
+    .notice-content
+      a * 3
+
+section.sono
+  .sono-inner
+    .sono-content
+      h2
+      a
+
+footer
+  .footer-inner
+    .footer-top
+      .footer-left 
+        a * 7
+      .footer-right
+        a * 4
+    .footer-bottom
+      .company
+        a
+        span
+      .tel
+        span > em
+
+.top > a        
