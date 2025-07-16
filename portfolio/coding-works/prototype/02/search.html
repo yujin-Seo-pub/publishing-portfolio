@@ -11,10 +11,10 @@
         // search focus 이벤트
         $(".search .field input[type=search]")
           .focus(function () {
-            $(this).parent().next().css("display", "block");
+            $(this).parent().next().css("opacity", "1");
           })
           .blur(function () {
-            $(".hash-tag").css("display", "none");
+            $(".hash-tag").css("opacity", "0");
           });
         // modal 열기/닫기 이벤트
         $(".open-search").click(function () {
