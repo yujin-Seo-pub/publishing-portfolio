@@ -161,6 +161,10 @@ header.active {
   height: 100vh;
   object-fit: cover;
 }
+.slide03,
+.slide04 {
+  display: none;
+}
 .swiper-button-next:after,
 .swiper-button-prev:after {
   color: #999;
